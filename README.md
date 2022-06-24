@@ -1,3 +1,3 @@
 # Progetto corso frontend 
 
-Ciao!
+Questa è la repo per il corso frontend Opinno
