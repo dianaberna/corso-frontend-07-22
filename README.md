@@ -12,3 +12,4 @@ Questa è la repo per il corso frontend Opinno
 
 
 Riga di pifferi
+M I C H E L E  A N G E L I N I
