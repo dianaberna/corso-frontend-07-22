@@ -6,6 +6,7 @@ Questa è la repo per il corso frontend Opinno
 - Questa è la riga di codice di Silvio
 - Riga di Leonardo
 - Paola!
+Questa riga è di Lorena
 
 
 ![Markdown Plus](https://www.villaggionatura.com/shop/modules/ph_simpleblog/covers/28.jpg)
