@@ -9,6 +9,7 @@ Questa è la repo per il corso frontend Opinno
 - Sergio
 Questa riga è di Lorena
 - Ciao sono Paola!
+- ciao mondo
 
 
 ![Markdown Plus](https://www.villaggionatura.com/shop/modules/ph_simpleblog/covers/28.jpg)
@@ -28,3 +29,10 @@ CIAONE!
 riga diana
 riga 2 diana
 riga 3 diana
+
+nvfiubsiubuf
+
+
+vefnwnvirhniuerw
+
+novfdniovdnidov
