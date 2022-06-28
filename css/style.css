@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    background-color: red;
+    background-color: #ffffff;
 }
 
 button{
@@ -15,12 +15,13 @@ button{
     border-radius: 8px;
 }
 
-button .fill-1{
+.fill-1{
     color: #ffffff;
     background-color: #DC4298;
+    border: 1px solid #DC4298;
 }
 
-button .fill-0{
+.fill-0{
     color: #DC4298;
     border: 1px solid #DC4298;
     background-color: #ffffff;
