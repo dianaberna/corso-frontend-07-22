@@ -61,9 +61,10 @@ nav a:hover{
 .learn div:first-child{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
     width: 50%;
     max-width: 50%;
+    gap: 20px;
 }
 
 .learn h1{
@@ -72,6 +73,7 @@ nav a:hover{
     width: 557px;
     height: 276px;
     text-transform: capitalize;
+    margin-bottom: 0;
 }
 
 .learn p{
@@ -79,6 +81,8 @@ nav a:hover{
     height: 99px;
     font-size: 20px;
     letter-spacing: 0.5px;
+    margin: 0;
+    padding: 10px 0;
 }
 
 .Image{
@@ -92,6 +96,8 @@ nav a:hover{
 
 .Avatar{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -102,18 +108,32 @@ nav a:hover{
 }
 
 .Avatar img{
+    width: 100px;
+}
+
+.circle{
     width: 60px;
     height: 60px;
-    border: 1px solid #F1B1D5;
     border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #F1B1D5;
+    position: absolute;
+}
+
+.Avatar > div{
+    margin: 10px;
+    position: relative;
 }
 
 h1 + img{
-    position: absolute;
     width: 393.5px;
     height: 14.07px;
-    left: 250px;
-    top: 430px;
+    color: #230F0F;
+    margin-top: -50px;
 }
 
 /*
