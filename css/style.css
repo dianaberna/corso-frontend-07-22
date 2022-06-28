@@ -55,3 +55,12 @@ nav a {
     display: flex;
     align-items: center;
 }
+.TitleNav {
+    font-weight: 600;
+    width: 20rem;
+    font-size: 28px;
+    line-height: 150%;
+    margin-right: 2.375rem;
+    text-transform: capitalize;
+    color: #230F0F;
+    }
