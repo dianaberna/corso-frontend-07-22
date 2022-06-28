@@ -8,6 +8,24 @@ body{
     background-color: red;
 }
 
+button{
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight :bold;
+    border-radius: 8px;
+}
+
+button .fill-1{
+    color: #ffffff;
+    background-color: #DC4298;
+}
+
+button .fill-0{
+    color: #DC4298;
+    border: 1px solid #DC4298;
+    background-color: #ffffff;
+}
+
 /* 
     rosa -> DC4298 
     azzurro -> 086BED
