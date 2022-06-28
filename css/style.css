@@ -67,12 +67,14 @@ nav a {
 .section_bi_column
 {
     display: flex;
-    flex-direction: row;
     padding: 40px;
     gap: 50px;
 }
 
-
+#section_text
+{
+    flex-direction: column;
+}
 
 .title
 {
