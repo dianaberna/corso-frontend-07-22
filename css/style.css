@@ -47,11 +47,89 @@ nav a {
     rosa -> DC4298 
     azzurro -> 086BED
 */
-.learn{
 
-}
 
 .Avatar{
     display: flex;
     align-items: center;
+}
+
+/* GRUPPO SCHEDE CORSO*/
+
+.schedina_corso {
+   
+    box-sizing: border-box;
+    overflow:hidden;
+    background: #FFFFFF;
+    border: 1px solid #eceff4;
+    border-radius: 8px;
+    Width: 368px;
+    Height:480px;
+
+    padding: 0px 24px;
+
+ 
+    
+}
+
+.schedina_corso > img {
+    margin: -24px -24px 0 -24px;
+}
+
+.pulsantino_corso {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 15px;
+    gap: 10px;
+
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 20px;
+    top: 140px;
+
+    color: #DC4298;
+    font-weight: 600;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.data_scheda{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 150%;
+    color: #777;
+}
+
+.titolo_scheda{
+    
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    line-height: 150%;
+    
+}
+
+.descrizione_scheda{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.scontato{
+
+}
+.prezzo{
+
+}
+
+
+.pulsante_corso{
+    align:left;
+    color: #DC4298;
+    
+    border: 1px solid #DC4298;
 }
