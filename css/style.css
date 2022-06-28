@@ -30,6 +30,7 @@ button {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 35px 40px 0 40px;
 }
@@ -46,3 +47,11 @@ nav a {
     rosa -> DC4298 
     azzurro -> 086BED
 */
+.learn{
+
+}
+
+.Avatar{
+    display: flex;
+    align-items: center;
+}
