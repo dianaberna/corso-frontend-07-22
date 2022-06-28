@@ -1,31 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700;800&display=swap');
 
-html{
+html {
     font-family: 'Maven Pro', sans-serif;
 }
 
-body{
+body {
     background-color: #ffffff;
 }
 
-button{
+button {
     padding: 14px 40px;
     font-size: 16px;
-    font-weight :bold;
+    font-weight: bold;
     border-radius: 8px;
 }
 
-.fill-1{
+.fill-1 {
     color: #ffffff;
     background-color: #DC4298;
     border: 1px solid #DC4298;
 }
 
-.fill-0{
+.fill-0 {
     color: #DC4298;
     border: 1px solid #DC4298;
     background-color: #ffffff;
 }
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 40px 0 40px;
+}
+
+nav a {
+    padding-right: 52px;
+}
+
+/* div a:last-child {
+    padding-right: 40px;
+} */
 
 /* 
     rosa -> DC4298 
