@@ -54,4 +54,49 @@ nav a {
 .Avatar{
     display: flex;
     align-items: center;
+    flex-direction: row;
+}
+
+.section_bi_column
+{
+    display: flex;
+
+    
+}
+
+.section_bi_column
+{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    gap: 50px;
+}
+
+
+
+.title
+{
+    align-self: flex-start;
+}
+
+#online-course-image
+{
+    width: 550px;
+    height: 450px;
+}
+
+.title
+{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #230F0F;
+}
+
+.text
+{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4D4D4D;
 }
