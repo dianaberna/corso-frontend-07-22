@@ -175,3 +175,29 @@ h1 + img{
     color: #230F0F;
     margin-top: -50px;
 }
+
+.number{
+    background-color: #286F6C;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 150px;
+    
+}
+
+.sec{
+    /* margin-left: 100px; */
+    margin-top: -20px;
+}
+
+.sec > p{
+    font-size: 20px;
+
+}
+
+.sec p:first-child{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: -10px;
+}
