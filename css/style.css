@@ -213,20 +213,20 @@ h1 + img{
     ====================================
  */
 
-#section_title
+#card__header
 {
     margin-top: 20px;
 }
 
 
-.my_row
+.card_row
 {
     display:flex ;
     flex-direction: row;
 
 }
 
-.sub_col
+.card_sub_col
 {
     display: flex;
     flex-direction: row;
@@ -235,8 +235,24 @@ h1 + img{
 
 }
 
+#card_title
+{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1E1F4B;
 
-.description
+}
+
+.card_description
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #2E3E5C;
+}
+
+.card__copy
 {
     font-weight: 400;
     font-size: 14px;
@@ -246,7 +262,7 @@ h1 + img{
 
 
 
-.my_container
+.card
 {
     margin-top: 40px;
 }
@@ -258,7 +274,7 @@ h1 + img{
     height: 448px;
 }
 
-#title_digital_product
+#card_title
 {
     color: #1E1F4B;
     font-weight: 700;
@@ -268,7 +284,7 @@ h1 + img{
     text-transform: capitalize;
 }
 
-#text_digital_product
+#card_text
 {
     font-weight: 400;
     font-size: 14px;
@@ -276,12 +292,13 @@ h1 + img{
     color: #2E3E5C;
 }
 
-.title_description
+.card_sub_description
 {
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
-    color: #2E3E5C;
+    text-transform: capitalize;
+     color: #2E3E5C;
 }
 
 .img_description
