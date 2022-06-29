@@ -57,10 +57,17 @@ nav a {
 .section_bi_column
 {
     display: flex;
+    flex-wrap: nowrap;
     padding: 40px;
     gap: 50px;
     align-content: flex-start;
 }
+
+.btn_div
+{
+    padding-top: 10px;
+}
+
 
 #section_text
 {
@@ -76,6 +83,7 @@ nav a {
 {
     width: 550px;
     height: 450px;
+    border-radius: 12px;
 }
 
 .title
@@ -96,7 +104,7 @@ nav a {
 
 #container_testimonial
 {
-    padding: 20px;
+    padding: 0px;
 }
 
 #testimonail
@@ -113,4 +121,10 @@ nav a {
     font-size: 16px;
     line-height: 24px;
     color: #80848E;
+}
+
+.linea
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
