@@ -20,7 +20,7 @@ button {
     border-radius: 8px;
 }
 
-.fill-1 {
+.button--pink{
     color: #ffffff;
     background-color: #DC4298;
     border: 1px solid #DC4298;
@@ -28,7 +28,7 @@ button {
     transition: 0.4s;
 }
 
-.fill-1:hover{
+.button--pink:hover{
     border: 1px solid #DC4298;
     background-color: #ffffff;
     color: #DC4298;
@@ -37,14 +37,14 @@ button {
     transition: 0.4s;
 }
 
-.fill-0 {
+.button--white {
     color: #DC4298;
     border: 1px solid #DC4298;
     background-color: #ffffff;
     transition: 0.4s;
 }
 
-.fill-0:hover{
+.button--white:hover{
     color: #ffffff;
     background-color: #DC4298;
     border: 1px solid #DC4298;
@@ -53,6 +53,7 @@ button {
     transition: 0.4s;
 }
 
+/* da ricontrollare i nomi delle classi - INIZIO */
 
 nav {
     display: flex;
@@ -203,6 +204,8 @@ h1 + img{
     padding-top: 10px;
 }
 
+/* da ricontrollare i nomi delle classi - FINE */
+
 /* GRUPPO SCHEDE CORSO - Michele*/
 
 .courses{
@@ -303,7 +306,7 @@ h1 + img{
     font-weight: 400;
 }
 
-.card__content--price > button{
+/* .card__content--price > button{
     padding: 10px 28px;
      
     font-size: 12px;
@@ -311,4 +314,4 @@ h1 + img{
     color: #DC4298;
     background-color: #ffffff;
     border: 1px solid #DC4298;
-}
+} */
