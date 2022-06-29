@@ -128,3 +128,12 @@ nav a {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.btn_arrow
+{
+    width: 64px;
+    height: 64px;
+    position: relative;
+    left: 400px;
+    bottom: 60px;
+}
