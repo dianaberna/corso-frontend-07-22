@@ -54,6 +54,14 @@ nav a {
     flex-direction: row;
 }
 
+
+
+
+/* ==============================
+css scheda sotto ai loghi (Silvio
+=============================) */
+
+
 .section_bi_column
 {
     display: flex;
@@ -63,7 +71,7 @@ nav a {
     align-content: flex-start;
 }
 
-.btn_div
+.section_btn
 {
     padding-top: 10px;
 }
@@ -102,12 +110,12 @@ nav a {
     color: #4D4D4D;
 }
 
-#container_testimonial
+#section_testimonial
 {
     padding: 0px;
 }
 
-#testimonail
+#testimonial
 {
     font-size: 26px;
     font-weight: 600;
@@ -123,7 +131,7 @@ nav a {
     color: #80848E;
 }
 
-.linea
+.section_linea
 {
     padding-top: 10px;
     padding-bottom: 10px;
