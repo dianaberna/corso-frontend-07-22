@@ -20,6 +20,7 @@ button {
     color: #ffffff;
     background-color: #DC4298;
     border: 1px solid #DC4298;
+    height: 60px;
 }
 
 .fill-0 {
@@ -79,10 +80,16 @@ nav a:hover{
 .learn p{
     width: 532px;
     height: 99px;
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
+    line-height: 165%;
     letter-spacing: 0.5px;
     margin: 0;
-    padding: 10px 0;
+    padding: 30px 0;
+    color: #230F0F;
+    font-weight: bolder;
 }
 
 .Image{
@@ -99,12 +106,8 @@ nav a:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.Avatar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 515px;
+    height: 63px;
 }
 
 .Avatar img{
@@ -125,8 +128,45 @@ nav a:hover{
 }
 
 .Avatar > div{
-    margin: 10px;
-    position: relative;
+    width: 296px;
+    height: 60px;
+}
+
+.Avatar #primo{
+    width: 60px;
+    z-index: 1;
+}
+
+.Avatar #secondo{
+    z-index: 2;
+    margin-left: 40px;
+}
+
+.Avatar #terzo{
+    z-index: 3;
+    margin-left: 80px;
+}
+
+.Avatar p{
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 165%;
+    padding: 0;
+    width: 140px;
+    height: 23px;
+    letter-spacing: -0.5px;
+    color: #230F0F;
+}
+
+.votazioni{
+    margin-left: 150px;
+}
+
+.icone{
+    display: flex;
+    flex-direction: column;
 }
 
 h1 + img{
@@ -135,9 +175,3 @@ h1 + img{
     color: #230F0F;
     margin-top: -50px;
 }
-
-/*
-.Avatar img:first-child{
-    margin-left: 40px;
-}
-*/
