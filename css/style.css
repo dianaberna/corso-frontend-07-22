@@ -116,6 +116,47 @@ h1 + img{
     top: 430px;
 }
 
+.contact_us {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_us > div{
+    width:574px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.backgroundRowRose{
+    position:absolute;
+    z-index: -1;
+    width: 100% !important;
+    background-color: #DC4298;
+}
+
+.contact_us p{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #ffffff;
+}
+
+.circleRose{
+    border-radius: 100%;
+    width: 569px;
+    height:569px;
+    margin-top: 10px;
+    background: #D2388F;
+}
+
+.circleRose img{
+    margin-top: 20px;
+}
+
+
+
 /*
 .Avatar img:first-child{
     margin-left: 40px;
