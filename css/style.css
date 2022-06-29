@@ -222,8 +222,8 @@ h1 + img{
     background: #FFFFFF;
     border: 1px solid #eceff4;
     border-radius: 8px;
-    Width: 368px;
-    Height:480px;
+    width: 368px;
+    height: 500px;
     padding: 0px 23px 1.8rem 24px ;
     margin:14px;
     display: flex;
