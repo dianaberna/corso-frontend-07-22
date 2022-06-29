@@ -184,6 +184,7 @@ nav a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 4rem 0;
 }
 
 .courses__title {
@@ -328,9 +329,10 @@ nav a:hover{
 #partner {
     display: flex;
     align-items: center;
+    padding: 4rem 0;
 }
 
-.textPartnerContainer {
+#partner p{
     font-weight: 600;
     width: 20rem;
     font-size: 28px;
@@ -340,7 +342,7 @@ nav a:hover{
     color: #230F0F;
 }
 
-.partnerLogoContainer img {
+#partner img {
     padding: 0 2rem;
     margin-bottom: 28px;
 }
@@ -368,9 +370,10 @@ scheda sotto ai loghi (Silvio)
 .section__2column{
     display: flex;
     flex-wrap: nowrap;
-    padding: 40px;
+    padding: 0 40px;
     gap: 50px;
     align-content: flex-start;
+    padding: 4rem 0;
 }
 
 .section__content{
