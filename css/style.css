@@ -13,6 +13,14 @@ body {
     margin: 0 100px;
 }
 
+h1{
+    font-size: 68px;
+}
+
+h2{
+    font-size: 40px;
+}
+
 button {
     padding: 14px 40px;
     font-size: 16px;
@@ -89,7 +97,6 @@ nav a:hover{
 }
 
 .learn h1{
-    font-size: 68px;
     margin-top: 100px;
     width: 557px;
     height: 276px;
@@ -206,14 +213,71 @@ h1 + img{
 
 /* da ricontrollare i nomi delle classi - FINE */
 
-/* GRUPPO SCHEDE CORSO - Michele*/
+/* GRUPPO SCHEDE CORSO - Michele & Leonardo */
 
 .courses{
-    margin: 12px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    flex: 1 0 30%;
+    justify-content: center;
+}
+
+.courses__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #230F0F;
+}
+  
+.courses__nav{
+    position: relative;
+    width: 100%;
+    padding: 14px 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.courses__nav--scrollable{
+    gap: 10px;
+    overflow: scroll;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.courses__nav button{
+    white-space: nowrap;
+    border-radius: 100px;
+}
+
+.courses__nav button:last-child{
+    margin-right: 50px;
+}
+
+.courses__nav--gradient{
+    position: absolute;
+    width: 10%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 100%);
+}
+
+::-webkit-scrollbar {
+    opacity: 0;
+    width: 0;
+    display: none;
+    background-color: transparent;
+}
+
+.courses__nav > button {
+    border-radius: 100px;
+    margin-left: 20px;
 }
 
 .card {
@@ -310,3 +374,5 @@ h1 + img{
     padding: 10px 28px;
     font-size: 12px;
 } 
+
+
