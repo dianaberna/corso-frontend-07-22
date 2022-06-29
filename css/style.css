@@ -205,3 +205,87 @@ h1 + img{
     display: flex;
     padding-top: 10px;
 }
+
+
+
+/* =====================================
+    stile della parte di Digital Product (Silvio)
+    ====================================
+ */
+
+#section_title
+{
+    margin-top: 20px;
+}
+
+
+.my_row
+{
+    display:flex ;
+    flex-direction: row;
+
+}
+
+.sub_col
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+   padding-left:20px ;
+
+}
+
+
+.description
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #2E3E5C;
+}
+
+
+
+.my_container
+{
+    margin-top: 40px;
+}
+
+
+#banking
+{
+    width: 596px;
+    height: 448px;
+}
+
+#title_digital_product
+{
+    color: #1E1F4B;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+}
+
+#text_digital_product
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #2E3E5C;
+}
+
+.title_description
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2E3E5C;
+}
+
+.img_description
+{
+    width: 263px;
+    height: 188px;
+}
