@@ -211,7 +211,8 @@ h1 + img{
     align-content: flex-start;
     color: black;
   }
-  
+
+                                            /*<--- START CSS Footer --->*/  
   .container {
     width: 100%;
     padding-right: 15px;
@@ -229,14 +230,16 @@ h1 + img{
   
   .column {
     flex: 0 0 33.33334%;
-  
   }
   
   .copyright {
     background-color: black;
     padding: 20px 0px;
-    height: 64px;
+    height: 60px;
+    width: 100%;
     background-position: center;
     align-content: center;
+    background-size: cover;
     color: white;
   }
+                                            /*<--- END CSS Footer --->*/
