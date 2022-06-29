@@ -62,7 +62,7 @@ nav a {
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 
     flex: 1 0 30%;
 }
