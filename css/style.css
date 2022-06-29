@@ -57,12 +57,14 @@ nav a {
 /* GRUPPO SCHEDE CORSO*/
 
 .schede_corso{
-    margin-left: 136px;
-    margin-right: 136px;
+    margin: 12px;
     
     
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
+    flex: 1 0 30%;
 }
 
 .schedina_corso {
