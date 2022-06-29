@@ -306,12 +306,7 @@ h1 + img{
     font-weight: 400;
 }
 
-/* .card__content--price > button{
+.card__content--price > button{
     padding: 10px 28px;
-     
     font-size: 12px;
-    font-weight: 700;
-    color: #DC4298;
-    background-color: #ffffff;
-    border: 1px solid #DC4298;
-} */
+} 
