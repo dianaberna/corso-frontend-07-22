@@ -136,6 +136,83 @@ h1 + img{
     margin-top: -50px;
 }
 
+
+#testimonial {
+display: flex;
+width: 1440px;
+height: 480px;
+flex-direction: column;
+justify-content: right;
+flex-wrap: wrap;
+align-content: space-around;
+margin-top: 200px;
+
+}
+
+    .Avatartest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    left: 100px;
+    top: 154px;
+    padding: 20px;
+    
+    }
+
+
+    .TestoT{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: auto;
+    width: 102px;
+    height: 20px;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    padding-left: 100px;
+    }
+
+
+    .Imgtest{
+    display: flex;
+    flex-direction: row;
+    align-self: auto;
+    width: 600px;
+    height: 250px;
+    padding-left: 500px;
+    margin-top: 150px;
+    }
+
+
+    .Testofondo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: auto;
+        margin-top: 200px;
+    }
+
+    .TestinoT{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: auto;
+        width: 102px;
+        height: 20px;
+        font-family: 'Saira';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 100%;
+        opacity: 0.5;
+        margin-top: 200px;
+        }
+
 /*
 .Avatar img:first-child{
     margin-left: 40px;
