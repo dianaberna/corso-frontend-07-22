@@ -26,6 +26,7 @@ button {
     font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
+    white-space: nowrap;
 }
 
 .button--pink{
@@ -50,18 +51,6 @@ button {
     border: 1px solid #DC4298;
     background-color: #ffffff;
     transition: 0.4s;
-<<<<<<< HEAD
-=======
-}
-
-.button--white:hover{
-    color: #ffffff;
-    background-color: #DC4298;
-    border: 1px solid #DC4298;
-    text-decoration: underline;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    transition: 0.4s;
->>>>>>> sergio_branch
 }
 
 .button--white:hover{
@@ -73,7 +62,7 @@ button {
     transition: 0.4s;
 }
 
-/* da ricontrollare i nomi delle classi - INIZIO */
+/* Barra di Navigazione - Pifferi */
 
 nav {
     display: flex;
@@ -82,7 +71,7 @@ nav {
     padding: 35px 40px 0 0px;
 }
 
-nav a {
+nav a{
     padding-right: 52px;
     text-decoration: none;
     color: black;
@@ -92,60 +81,40 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.learn{
+/* Hero section - Avallone */
+
+#hero{
     display: flex;
+    gap: 10rem;
 }
 
-.learn div:first-child{
-    width: 50%;
-    max-width: 50%;
-}
-
-.learn div:only-child{
+#hero > div{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 4rem;
 }
 
-.learn h1{
+#hero h1{
     margin-top: 100px;
-    width: 557px;
-    height: 276px;
-    text-transform: capitalize;
     margin-bottom: 0;
     line-height: 135%;
     font-weight: 800;
 }
 
-h1 + img{
-    width: 393.5px;
-    height: 14.07px;
-    color: #230F0F;
-}
-/* 
-    rosa -> DC4298 
-    azzurro -> 086BED
-*/
-
-.learn p{
-    width: 532px;
-    height: 99px;
-    font-family: 'Maven Pro';
-    font-style: normal;
-    font-weight: 500;
+#hero p{
+    margin: 0px;
     font-size: 20px;
     line-height: 165%;
     letter-spacing: 0.5px;
-    margin: 0;
-    padding: 50px 0;
-    opacity: 0.8;
-    margin-bottom: 20px;
-    color: #230F0F;
-    font-weight: bolder;
 }
 
-.Image{
+#hero h1 + img{
+    width: 393.5px;
+    height: 14.07px;
+}
+
+#hero__image{
     margin-top: 60px;
     width: 50%;
     max-width: 50%;
@@ -154,21 +123,20 @@ h1 + img{
     align-items: center;
 }
 
-
-.Avatar{
+.hero__container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    width: 515px;
-    height: 63px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
 }
 
-.Avatar img{
+.hero__container img{
     width: 100px;
 }
 
-.circle{
+.avatar__circleMask{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -178,56 +146,37 @@ h1 + img{
     align-content: center;
     justify-content: center;
     border: 1px solid #F1B1D5;
-    position: absolute;
 }
 
-.Avatar > div{
-    width: 296px;
-    height: 60px;
+.avatar__circleMask:not(:first-child){
+    margin-left: -20px;
 }
 
-.Avatar #primo{
-    width: 60px;
-    z-index: 1;
+.hero__container > div{
+    position: relative;
+    display: flex;
 }
 
-.Avatar #secondo{
-    z-index: 2;
-    margin-left: 50px;
-}
-
-.Avatar #terzo{
-    z-index: 3;
-    margin-left: 90px;
-}
-
-.Avatar p{
-    font-family: 'Maven Pro';
-    font-style: normal;
+.hero__container p{
     font-weight: 500;
     font-size: 14px;
     line-height: 165%;
-    padding: 0;
-    width: 140px;
-    height: 23px;
     letter-spacing: -0.5px;
     color: #230F0F;
 }
 
-.votazioni{
-    margin-left: 170px;
+.votation{
+    flex-direction: column;
 }
 
-.votazioni p{
-    padding-top: 10px;
+.votation p{
+    white-space: nowrap;
+    margin: 0px;
 }
 
-.icone{
+.votation__stars{
     display: flex;
-    padding-top: 10px;
 }
-
-/* da ricontrollare i nomi delle classi - FINE */
 
 /* GRUPPO SCHEDE CORSO - Michele & Leonardo */
 
