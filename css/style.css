@@ -143,17 +143,19 @@ h1 + img{
 */
 
 #salvi {
-    background-image: url("lampada.png");
+    background-image: url("../assets/lampada.png");
 
 width: 1440px;
 height:490px;
 font-family: sans-serif;
 text-align:left;
+
+
 }
 
 #text {
   
-    padding-top: 100px;
+   padding-top:100px;
     padding-left: 760px;
     font-weight: 600;
     font-size:40px;
@@ -166,7 +168,7 @@ text-align:left;
 #text2 {
     
     font-size:20px;
-    padding-top:20px;
+    
     padding-left: 760px;
     font-size:20px;
     line-height: 100%;
@@ -177,8 +179,9 @@ text-align:left;
 form {
 
 
-padding-top:40px;
+
 padding-left: 760px;
+padding-bottom:142px;
 
 }
 
