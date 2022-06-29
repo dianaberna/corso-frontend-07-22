@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap');
 
 html {
     font-family: 'Maven Pro', sans-serif;
@@ -66,14 +66,16 @@ nav a {
     Width: 368px;
     Height:480px;
 
-    padding: 0px 24px;
-
- 
+    padding: 0px 1.5rem 1.8rem ;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     
 }
 
 .schedina_corso > img {
-    margin: -24px -24px 0 -24px;
+    margin: -24px -24px 0 ;
 }
 
 .pulsantino_corso {
@@ -96,40 +98,59 @@ nav a {
     border-radius: 20px;
 }
 
+.contenuto_scheda{
+    max-width: 0.8;
+    padding: 0%;
+}
+
 .data_scheda{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.4px;
-    line-height: 150%;
-    color: #777;
+   
+    color: #999;
 }
 
 .titolo_scheda{
     
     font-weight: 800;
     font-size: 24px;
+    line-height: 36px;
     letter-spacing: 0.6px;
-    line-height: 150%;
+    margin: 0; 
     
 }
 
 .descrizione_scheda{
+    color: #4D4D4D;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    margin-top: 8px;
+    margin-bottom: 25px;
 }
 
-.scontato{
-
+.prezzo_e_pulsante{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .prezzo{
-
+    font-weight: 700;
+    color: #DC4298;
 }
-
+.prezzo del{
+    color:#999;
+    font-weight: 400;
+}
 
 .pulsante_corso{
-    align:left;
+    padding: 10px 28px;
+     
+    font-size: 12px;
+    font-weight: 700;
     color: #DC4298;
-    
+    background-color: #ffffff;
     border: 1px solid #DC4298;
 }
