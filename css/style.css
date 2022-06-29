@@ -321,6 +321,27 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+/* partner logo - Paola*/
+#partner {
+    display: flex;
+    align-items: center;
+}
+
+.textPartnerContainer {
+    font-weight: 600;
+    width: 20rem;
+    font-size: 28px;
+    line-height: 150%;
+    margin-right: 2.375rem;
+    text-transform: capitalize;
+    color: #230F0F;
+}
+
+.partnerLogoContainer img {
+    padding: 0 2rem;
     margin-bottom: 28px;
 }
 
