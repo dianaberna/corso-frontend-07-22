@@ -60,13 +60,6 @@ nav a {
 .section_bi_column
 {
     display: flex;
-
-    
-}
-
-.section_bi_column
-{
-    display: flex;
     padding: 40px;
     gap: 50px;
 }
