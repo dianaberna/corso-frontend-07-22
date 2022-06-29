@@ -142,7 +142,64 @@ h1 + img{
 }
 */
 
-#Salvi {
-background-image: url('lampada.png');
+#salvi {
+    background-image: url("lampada.png");
 
+width: 1440px;
+height:490px;
+font-family: sans-serif;
+text-align:left;
+}
+
+#text {
+  
+    padding-top: 100px;
+    padding-left: 760px;
+    font-weight: 600;
+    font-size:40px;
+    line-height: 54px;
+    color:#FFFFFF;
+    
+
+}
+
+#text2 {
+    
+    font-size:20px;
+    padding-top:20px;
+    padding-left: 760px;
+    font-size:20px;
+    line-height: 100%;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+form {
+
+
+padding-top:40px;
+padding-left: 760px;
+
+}
+
+#email {
+    width: 384px;
+    height:60px;
+    border-radius: 8px;
+}
+
+[placeholder]{
+    padding-left: 24px;
+}
+
+button {
+    width:152px;
+    height:60px;
+    margin-left:22px;
+    border-radius:8px;
+    background-color: #23262F;
+    font-weight:600;
+    font-size:20px;
+    line-height: 20px;
+    color:#FFFFFF;
 }
