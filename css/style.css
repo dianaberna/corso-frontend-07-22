@@ -57,7 +57,12 @@ nav a {
 /* GRUPPO SCHEDE CORSO*/
 
 .schede_corso{
+    margin-left: 136px;
+    margin-right: 136px;
+    
+    
     display: flex;
+    flex-wrap: wrap;
 }
 
 .schedina_corso {
@@ -71,8 +76,8 @@ nav a {
     Height:480px;
 
     padding: 0px 23px 1.8rem 24px ;
-    margin: 1.6rem;
-
+    margin:14px;
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -88,11 +93,13 @@ nav a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     padding: 6px 13px;
     position: absolute;
     width: 48px;
     height: 20px;
     margin-top: 140px;
+    
     font-size: 15px;
     color: #DC4298;
     font-weight: 500;
