@@ -111,6 +111,10 @@ h1 + img{
     height: 14.07px;
     color: #230F0F;
 }
+/* 
+    rosa -> DC4298 
+    azzurro -> 086BED
+*/
 
 .learn p{
     width: 532px;
@@ -375,4 +379,71 @@ h1 + img{
     font-size: 12px;
 } 
 
+/* ==============================
+scheda sotto ai loghi (Silvio)
+============================= */
 
+.section__2column{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px;
+    gap: 50px;
+    align-content: flex-start;
+}
+
+.section__content{
+    align-self: flex-start;
+}
+
+.section__image{
+    width: 550px;
+    height: 450px;
+    border-radius: 12px;
+}
+
+.section__content--title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #230F0F;
+    margin-top: 0px;
+}
+
+.section__content--body{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4D4D4D;
+}
+
+.section__author{
+    padding: 0px;
+}
+
+.section__author--name{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 39px;
+    color: #1C1D4E;
+}
+
+.section__author--job{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #80848E;
+}
+
+.section__line{
+    height: 1px;
+    border: 0px;
+    background-color: #DCDCE6;
+}
+
+.button__arrow{
+    width: 64px;
+    height: 64px;
+    position: relative;
+    left: 400px;
+    bottom: 80px;
+}
