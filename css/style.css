@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap');
+/* 
+    rosa -> DC4298 
+    azzurro -> 086BED
+*/
 
 html {
     font-family: 'Maven Pro', sans-serif;
@@ -67,14 +71,6 @@ nav a:hover{
     text-decoration: underline;
 }
 
-/* div a:last-child {
-    padding-right: 40px;
-} */
-
-/* 
-    rosa -> DC4298 
-    azzurro -> 086BED
-*/
 .learn{
     display: flex;
 }
@@ -133,6 +129,7 @@ h1 + img{
     flex-direction: column;
     align-items: center;
 }
+
 
 .Avatar{
     display: flex;
@@ -204,4 +201,114 @@ h1 + img{
 .icone{
     display: flex;
     padding-top: 10px;
+}
+
+/* GRUPPO SCHEDE CORSO - Michele*/
+
+.courses{
+    margin: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex: 1 0 30%;
+}
+
+.card {
+    box-sizing: border-box;
+    overflow:hidden;
+    background: #FFFFFF;
+    border: 1px solid #eceff4;
+    border-radius: 8px;
+    Width: 368px;
+    Height:480px;
+    padding: 0px 23px 1.8rem 24px ;
+    margin:14px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card > img {
+    margin: 0 -24px 0 ;
+}
+
+.card__view {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 6px 13px;
+    position: absolute;
+    width: 48px;
+    height: 20px;
+    margin-top: 140px;
+    
+    font-size: 15px;
+    color: #DC4298;
+    font-weight: 500;
+    background: #FFFFFF;
+    border-radius: 20px;
+    letter-spacing: -0.2px;
+    align-content: center;
+}
+
+.card__content{
+    max-width: 0.8;
+    padding: 0%;
+}
+
+.card__content--data{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    color: #999;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.card__content--title{   
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.6px;
+    margin: 0;   
+}
+
+.card__content--description {
+    color: #4D4D4D;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+.card__content--price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.card__content--price > p{
+    font-weight: 700;
+    font-size :18px;
+    color: #DC4298;
+}
+
+.card__content--price > p del{
+    color:#999;
+    font-weight: 400;
+}
+
+.card__content--price > button{
+    padding: 10px 28px;
+     
+    font-size: 12px;
+    font-weight: 700;
+    color: #DC4298;
+    background-color: #ffffff;
+    border: 1px solid #DC4298;
 }
