@@ -47,9 +47,6 @@ nav a {
     rosa -> DC4298 
     azzurro -> 086BED
 */
-.learn{
-
-}
 
 .Avatar{
     display: flex;
@@ -62,11 +59,12 @@ nav a {
     display: flex;
     padding: 40px;
     gap: 50px;
+    align-content: flex-start;
 }
 
 #section_text
 {
-   align-self: flex-start;
+    align-self: flex-start;
 }
 
 .title
@@ -98,7 +96,7 @@ nav a {
 
 #container_testimonial
 {
-    padding: 30px;
+    padding: 20px;
 }
 
 #testimonail
