@@ -286,6 +286,7 @@ h1 + img{
 
 .img_description
 {
+    border-radius: 10px;
     width: 263px;
     height: 188px;
 }
