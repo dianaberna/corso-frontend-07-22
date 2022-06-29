@@ -137,7 +137,7 @@ h1 + img{
 }
 
 
-#testimonial {
+#Testimonial {
 display: flex;
 width: 1440px;
 height: 480px;
@@ -149,7 +149,7 @@ margin-top: 200px;
 
 }
 
-    .Avatartest {
+.Testimonial_Avatar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -159,10 +159,10 @@ margin-top: 200px;
     top: 154px;
     padding: 20px;
     
-    }
+}
 
 
-    .TestoT{
+.Testimonial_Testo{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -175,10 +175,10 @@ margin-top: 200px;
     font-size: 25px;
     line-height: 100%;
     padding-left: 100px;
-    }
+}
 
 
-    .Imgtest{
+.Testimonial_Imgtest{
     display: flex;
     flex-direction: row;
     align-self: auto;
@@ -186,32 +186,32 @@ margin-top: 200px;
     height: 250px;
     padding-left: 500px;
     margin-top: 150px;
-    }
+}
 
 
-    .Testofondo{
+.Testimonial_Testofondo{
         display: flex;
         flex-direction: column;
         align-items: center;
         align-self: auto;
         margin-top: 200px;
-    }
+}
 
-    .TestinoT{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        align-self: auto;
-        width: 102px;
-        height: 20px;
-        font-family: 'Saira';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 100%;
-        opacity: 0.5;
-        margin-top: 200px;
-        }
+.Testimonial_Testino{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: auto;
+    width: 102px;
+    height: 20px;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    opacity: 0.5;
+    margin-top: 200px;
+}
 
 /*
 .Avatar img:first-child{
