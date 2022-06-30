@@ -1,22 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 body {
+    margin: 0%;
     height: 100vh;
     display: grid;
     grid-template-columns: 55% 1fr;
     grid-template-rows: 1fr ;
 
+    font-family: 'Space Grotesk';
+
 }
 
-#form__section{
-    background-color: white;
+#signup__form--section{
+    position: relative;
 }
+
+#signup__form--title{
+    font-weight: 700;
+    font-size: 24px;
+    justify-self: left;
+
+    margin-bottom: 80px;
+}
+
+#signup__form--section input{
+    box-sizing: border-box;
+
+
+    width: 400px;
+    height: 40px;
+
+    border: 1px solid #CCCCCC;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);
+    border-radius: 4px;
+
+    padding-left: 1rem;
+
+    font-family: 'Space Grotesk';
+    display: flex;
+    align-items: center;
+}
+
+
+#signup__form--section input::placeholder{
+    color: #CCCCCC;
+    font-size: 12px;
+}
+
+#signup__form--section input:focus-visible{
+    outline: 4px solid #2c918c;
+    box-shadow: 0px 4px 4px 4px rgba(204, 204, 204, 0.5);
+    border: 0;
+}
+
+#signup__form--section form {
+    margin-top: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup__form--bg{
+    background-color: white;
+    width: 65%;
+    filter: blur(0.2rem);
+    z-index: -2;
+}
+
+/* SEZIONE QUOTE */
 
 #quote__section{
-    margin: -50px -50px -50px 0;
-
-    background: linear-gradient(162.21deg, #517879 4.83%, #1E3E57 103.44%);
-    filter: blur(5px);
-
+    font-family: 'Space Grotesk', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0;
 }
 
+#quote--bg{
+    margin: 0%;
+
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    z-index: -3;
+
+    background: linear-gradient(162.21deg, #517879 4.83%, #1E3E57 103.44%);
+    filter: blur(0.1rem);
+}
