@@ -165,7 +165,8 @@ body {
 
 #quote__section--quote{
     width: 70%;
-    
+    margin-left: 15%;
+    margin-top: 12%;
 }
 
 #quote__section--quote p{
@@ -174,16 +175,19 @@ body {
 
 }
 
+#quote__section--author{
+    font-size: 16px;
+}
+
 #quote__section--text{
     font-size: 64px;
     line-height: 96px;
     color: #FFFFFF;
      opacity: 0.9;
+     
 }
 
-#quote__section--author{
-    font-size: 16px;
-}
+
 
 #quote__section--bg{
     margin: 0%;
