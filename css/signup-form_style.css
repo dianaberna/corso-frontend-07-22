@@ -11,8 +11,28 @@ body {
 
 }
 
+
 #signup__form--section{
     position: relative;
+}
+
+#signup__form--logo{
+    position: absolute;
+    margin-left: 64px;
+    margin-top: 40px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+
+
+
+    background: linear-gradient(93.38deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 #signup__form--title{
@@ -20,7 +40,22 @@ body {
     font-size: 24px;
     justify-self: left;
 
-    margin-bottom: 80px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 400px;
+}
+
+.signup__form--inputtitle{
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+
+
+.signup__form--inputtitle span{
+    font-weight: 400;
+    font-size: 12px;
+    color: #C4C4C4;
 }
 
 #signup__form--section input{
@@ -64,6 +99,41 @@ body {
     align-items: center;
 }
 
+#signup__form--pwdinstructions {
+    font-weight: 400;
+    font-size: 12px;
+    color: #C4C4C4;
+}
+
+
+#signup__form--section button{
+    width: 400px;
+    height: 40px;
+    
+    margin-top: 30px;
+
+    background: #27485D;
+    border: 1px solid #0d7057;
+    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);
+    border-radius: 4px;
+
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+#signup__form--login{
+    font-weight: 700;
+    color: #C4C4C4;
+}
+
+#signup__form--login a{
+    text-decoration: underline;
+    color: #476D73;
+}
+
 #signup__form--bg{
     background-color: white;
     width: 65%;
@@ -75,11 +145,47 @@ body {
 
 #quote__section{
     font-family: 'Space Grotesk', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
     color: white;
     margin: 0;
+    font-size: 16px;
 }
 
-#quote--bg{
+#quote__section--links{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 72px;
+    font-size: 16px;
+}
+
+#quote__section--links a{
+    margin: 48px 24px;
+}
+
+#quote__section--quote{
+    width: 70%;
+    
+}
+
+#quote__section--quote p{
+    margin:0;
+    
+
+}
+
+#quote__section--text{
+    font-size: 64px;
+    line-height: 96px;
+    color: #FFFFFF;
+     opacity: 0.9;
+}
+
+#quote__section--author{
+    font-size: 16px;
+}
+
+#quote__section--bg{
     margin: 0%;
 
     position: absolute;

@@ -17,48 +17,54 @@
         <p id="signup__form--logo">Kreativ</p>
         
         <form action="">
-            <p id="signup__form--title">Let's get you started</p>
+            <div id="signup__form--title">
+            <p >Let's get you started</p>
+            </div>
 
             <div class="signup__form--textinput">
-                <p >Full name</p>
+                <p class="signup__form--inputtitle">Full name</p>
                 <input type="text" placeholder="Ade Tiger">
             </div>
 
             <div class="signup__form--textinput">
-                <p>Email address</p>
+                <p class="signup__form--inputtitle">Email address</p>
                 <input type="text" placeholder="yourname@email.com">
             </div>
-            
+
             <div id="signup__form--phonenumber">
-                <p>Phone number</p>
+                <p class="signup__form--inputtitle">Phone number</p>
                 <input type="text" placeholder="(+39) 12345678">
             </div>
 
             <div id="signup__form--password">
-            <p>Create password</p>
-            <input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
-            >
-            <p>Password must contain a minimum of 8 characters</p>
-            <p>Password must contain at least one symbol e.g. @, !</p>
+            <p class="signup__form--inputtitle">Create password</p>
+            <input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
+            <p id="signup__form--pwdinstructions">Password must contain a minimum of 8 characters <br> Password must contain at least one symbol e.g. @, !</p>
             </div>
 
-            <p>Location <span>(Optional)</span></p>
-            <input type="select">
+            <div>
+            <p class="signup__form--inputtitle">Location <span>(Optional)</span></p>
+            <input type="select" placeholder="Select Location">
+            </div>
 
-            <p id="form--login--p">Already a user?<a> Login </a></p>
+            <button> Sign Up</button>
+
+            <p id="signup__form--login">Already a user?<a> Login </a></p>
         </form>
         
     </div>
 
     <div id="quote__section">
-        <div id="quote--bg"></div>
-        <div id="quote--text">
-            <div id="quote--links">
-                <p>Home</p> 
-                <p>Contact</p>
+        <div id="quote__section--bg"></div>
+        <div id="quote__section--text">
+            <div id="quote__section--links">
+                <a>Home</a> 
+                <a>Contact</a>
             </div>
-            <p>“Creativity is intelligence having fun”</p>
-            <p>-Albert Einstein</p>
+            <div id="quote__section--quote">
+                <p id="quote__section--text">“Creativity is intelligence having fun”</p>
+                <p id="quote__section--author">- Albert Einstein</p>
+            </div>
         </div>
     </div>
     
