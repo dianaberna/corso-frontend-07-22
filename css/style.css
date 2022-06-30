@@ -653,10 +653,12 @@ section h2 {
 }
 
 .section__content {
+    display: flex;
     justify-content: center;
 }
 
 .section__content p {
+    width: 670px;
     font-size: 16px;
     font-weight: 400;
     line-height: 3;
@@ -698,5 +700,25 @@ section img {
     text-align: center;
     margin-top: -15px;
 }
+
+@media screen and (max-width: 480px) {
+
+    /* media query pifferi */
+    .image__quote,
+    .section__image__testimonial {
+        display: none;
+    }
+
+    .section__content p {
+        width: auto;
+    }
+
+    /* end media query pifferi */
+
+}
+
+
+
+
 
 /* End  progect section pifferi */
