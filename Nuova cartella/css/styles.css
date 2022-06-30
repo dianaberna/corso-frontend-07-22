@@ -151,7 +151,7 @@ section {
     font-family: 'Poppins', sans-serif;
     background-color: #F5F5F5;
     text-align: center;
-    padding: 120px 0 84px 0;
+    padding: 60px 0 84px 0;
     margin: 50px 0;
 }
 
@@ -164,7 +164,6 @@ section h2,
 section h2 {
     font-weight: 800;
     font-size: 40px;
-    margin-top: -30px;
 }
 
 .section__content {
@@ -200,20 +199,16 @@ section img {
     justify-content: center;
 }
 
-.section__testimonial>h2 {
-    color: #1E1F4B;
-    text-transform: capitalize;
+.section__testimonial h2 {
     font-weight: 700;
     font-size: 24px;
-    margin-top: 15px;
 }
 
-.section__testimonial>p {
+.section__testimonial p {
     text-transform: capitalize;
     font-weight: 400;
     font-size: 20px;
     text-align: center;
-    margin-top: -15px;
 }
 
 /* End  progect section pifferi */
