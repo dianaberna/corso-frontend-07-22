@@ -576,4 +576,70 @@ scheda sotto ai loghi (Silvio)
     border-radius: 10px;
     width: 263px;
     height: 188px;
+    width: 100px;
+    height: 20px;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    opacity: 0.5;
+    margin-top: 200px;
+    margin-left: -50px;
+    
 }
+
+#Testimonial {
+/*     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between; */
+}
+    
+#Testimonial > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.testimonial__author{
+    display: flex;
+    gap: 20px;
+}
+
+.testimonial__banner{
+    display: flex;
+}
+
+.Testimonial_Testo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+}
+
+
+.Testimonial_Imgtest{
+    display: flex;
+    flex-direction: row;
+    align-self: auto;
+}
+
+.Testimonial_Testino{
+    font-size: 15px;
+    color: #DC4298;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+.Testimonial_Testofondo{
+    font-size: 20px;
+}
+
