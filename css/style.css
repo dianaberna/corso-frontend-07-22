@@ -653,10 +653,9 @@ section h2,
 
 section h2 {
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: -30px;
 }
-
 
 .section__content {
     display: flex;
@@ -664,7 +663,8 @@ section h2 {
 }
 
 .section__content p {
-    font-size: 16px;
+    width: 669px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 3;
 }
@@ -694,14 +694,14 @@ section img {
     color: #1E1F4B;
     text-transform: capitalize;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 15px;
 }
 
 .section__testimonial>p {
     text-transform: capitalize;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     margin-top: -15px;
 }
