@@ -102,7 +102,7 @@ nav a:hover{
     font-weight: 800;
 }
 
-#hero p{
+#hero > div > p{
     margin: 0px;
     font-size: 20px;
     line-height: 165%;
@@ -120,7 +120,6 @@ nav a:hover{
     max-width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .hero__container{
@@ -589,13 +588,13 @@ scheda sotto ai loghi (Silvio)
     
 }
 
-#Testimonial {
-/*     display: flex;
+/* #Testimonial {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-    align-content: space-between; */
-}
+    align-content: space-between;
+} */
     
 #Testimonial > div {
     display: flex;
@@ -645,5 +644,47 @@ scheda sotto ai loghi (Silvio)
 
 
 @media screen and (max-width: 480px){
-
+    body {
+        margin: 0 30px;
+    }
+    
+    #hero h1{
+        margin-top: 50px;
+        font-size: 36px;
+    }
+    
+    #hero > div > p{
+        font-size: 20px;
+        margin-top: -40px;
+    }
+    
+    #hero h1 + img{
+        width: 200px;
+        height: 13px;
+    }
+    
+    #hero__image{
+        display: none;
+    }
+    
+    .hero__container{
+        display: inline-block;
+    }
+    
+    .hero__container button{
+        margin-top: -30px;
+    }
+    
+    .avatars{
+        margin-top: 20px;
+    }
+    
+    .votation{
+        margin-left: 180px;
+        margin-top: -45px;
+    }
+    
+    .votation p{
+        font-size: 15px;
+    }
 }
