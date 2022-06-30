@@ -246,7 +246,7 @@ nav a:hover{
     margin-left: 20px;
 }
 
-.card {
+.courses .card {
     box-sizing: border-box;
     overflow:hidden;
     background: #FFFFFF;
@@ -261,7 +261,7 @@ nav a:hover{
     flex-direction: row;
 }
 
-.card > img {
+.courses .card > img {
     margin: 0 -24px 0 ;
 }
 
@@ -478,3 +478,102 @@ scheda sotto ai loghi (Silvio)
     margin-top: 20px;
 }
 
+/* =====================================
+    stile della parte di Digital Product (Silvio)
+    ====================================
+ */
+
+#card__header
+{
+    margin-top: 20px;
+}
+
+
+.card_row
+{
+    display:flex ;
+    flex-direction: row;
+
+}
+
+.card_sub_col
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+   padding-left:20px ;
+
+}
+
+#card_title
+{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1E1F4B;
+
+}
+
+.card_description
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #2E3E5C;
+}
+
+.card__copy
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #2E3E5C;
+}
+
+
+
+.cardlist
+{
+    margin-top: 40px;
+}
+
+
+#banking
+{
+    width: 596px;
+    height: 448px;
+}
+
+#card_title
+{
+    color: #1E1F4B;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+}
+
+#card_text
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #2E3E5C;
+}
+
+.card_sub_description
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+     color: #2E3E5C;
+}
+
+.img_description
+{
+    border-radius: 10px;
+    width: 263px;
+    height: 188px;
+}
