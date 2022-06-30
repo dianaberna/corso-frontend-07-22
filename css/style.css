@@ -212,34 +212,53 @@ h1 + img{
     color: black;
   }
 
-                                            /*<--- START CSS Footer --->*/  
-  .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  
-  .column {
-    flex: 0 0 33.33334%;
-  }
-  
-  .copyright {
-    background-color: black;
-    padding: 20px 0px;
-    height: 60px;
-    width: 100%;
-    background-position: center;
-    align-content: center;
-    background-size: cover;
-    color: white;
-  }
-                                            /*<--- END CSS Footer --->*/
+                                        /*<--- START CSS Footer --->*/  
+.footer_menu_title {
+    margin-left: 40px;
+    align-content: flex-start;
+    color: black;
+}
+
+footer {
+display: flex;
+flex-direction: column;
+}
+
+.footer_content {
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: flex-start;
+column-gap: 8rem;
+}
+
+ul {
+margin-top: 0px;
+list-style-type: none;
+}
+
+.column > div {
+/*flex: 0 0 23.33334%;*/
+display: flex;
+flex-direction: row;
+}
+
+.big_column {
+
+}
+
+.copyright {
+background-color: black;
+padding: 20px 0px;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+background-position: center;
+align-content: center;
+color: white;
+}
+
+.copyright p {
+text-align: center;
+}
+
+                                        /*<--- END CSS Footer --->*/
