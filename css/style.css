@@ -646,4 +646,7 @@ scheda sotto ai loghi (Silvio)
 
 @media screen and (max-width: 480px){
 
+    body{
+        background-color: red;
+    }
 }
