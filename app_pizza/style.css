@@ -2,7 +2,59 @@
 
 
 :root{
+    --font:"Signika" ;
     --light-grey: #8E91A0 ;
     --black: #24262F;
     --orange: #F6752C;
+}
+
+body{
+    background-color:#F5F5F5;;
+}
+
+.breadcrumb__list
+{
+    display: flex;
+    padding: 1em;
+    gap: 2em;
+
+}
+
+#crumb--color
+{
+    color: var(--orange);
+    position: relative;
+    top: 0.8em;
+    left: 0.8em;
+}
+
+
+.breadcrumb__item--wrap
+{
+    width: 2.5em;
+    height: 2.5em;
+    background-color: white;
+}
+
+
+span
+{
+    position: relative;
+    top: 0.8em;
+}
+
+.breadcrumb__item span:first-child
+{
+    color: var(--black);
+    font-weight: 600;
+    font-size: 1.8;
+    line-height: 0.9em;
+}
+
+.breadcrumb__item span:last-child
+{
+    color: var(--light-grey);
+    font-weight: 600;
+    font-size: 1.8;
+    line-height: 0.9em;
 }
