@@ -83,10 +83,23 @@ body {
     font-size: 12px;
 }
 
+@keyframes signup__box--highlight {
+    from {
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);}
+    to {outline: 4px solid #2c918c;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 6px 6px 6px rgba(204, 204, 204, 0.5);}
+
+}
+
 #signup__form--section input:focus-visible{
-    outline: 4px solid #2c918c;
-    box-shadow: 0px 4px 4px 4px rgba(204, 204, 204, 0.5);
-    border: 0;
+
+    animation-name: signup__box--highlight;
+    animation-duration: 0.05s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
 }
 
 #signup__form--section form {
@@ -113,16 +126,54 @@ body {
     margin-top: 30px;
 
     background: #27485D;
-    border: 1px solid #0d7057;
-    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);
+    border: 2px solid #517879;
+    box-shadow: 0px 4px 4px 2px rgba(124, 124, 124, 0.4);
     border-radius: 4px;
 
     font-family: 'Space Grotesk';
     font-weight: 700;
     font-size: 16px;
-    line-height: 24px;
     color: white;
 }
+
+/*DA AGGIUSTARE
+
+@keyframes signup__form--button-hover {
+    from{
+    box-shadow: 0px 4px 4px 2px rgba(124, 124, 124, 0.4);
+    background: #27485D;
+    }
+    to{
+    box-shadow: 0px 4px 8px 4px rgba(124, 124, 124, 0.4);
+    background:#517879;
+    }
+}
+@keyframes signup__form--button-active {
+    from{
+    box-shadow: 0px 4px 8px 4px rgba(124, 124, 124, 0.4);
+    background:#517879;
+    }
+    to{
+    box-shadow: 0px 0px 0px 0px rgba(27, 27, 27, 0.8);
+    background: #25464b;
+    }
+}
+
+#signup__form--section button:hover{
+    animation: signup__form--button-hover;
+    animation-duration: 0.1s;
+    animation-direction: alternate;
+    animation-timing-function: both;
+    animation-fill-mode: forwards;
+}
+#signup__form--section button:active{
+    animation: signup__form--button-active;
+    animation-duration: 0.02s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+*/
 
 #signup__form--login{
     font-weight: 700;
