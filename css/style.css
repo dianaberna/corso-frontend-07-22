@@ -659,4 +659,43 @@ scheda sotto ai loghi (Silvio)
         flex-wrap: wrap;
         justify-content: center;
     }
+
+
+    .card_row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .card__header{
+        width: 18rem;
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .card__title{
+        font-size: 1.6rem;
+    }
+
+
+
+    .card_row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .card_sub_col{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
