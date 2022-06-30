@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 html {
     font-family: 'Maven Pro', sans-serif;
@@ -204,4 +205,204 @@ h1 + img{
 .icone{
     display: flex;
     padding-top: 10px;
+}
+
+
+
+
+
+
+.abbonamenti{
+    font-family: 'Roboto';
+    width: 1440px;
+    height: 1026px;
+    background: #F7FAFC;
+}
+
+.scheda-abbonamento img{
+    height: 20px;
+    width: 22px;
+    margin-top: 37px;
+    margin-right: 10px;
+}
+
+.scheda-abbonamento:hover{
+    top: -3px;
+    transition: 0.5s;
+    position: relative;
+    box-shadow: 0px 7px 7px rgba(152, 149, 149, 1);
+}
+
+.bottone-abbonamento:hover{
+    text-decoration: underline;
+}
+
+.header-abbonamenti-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: -150px 130px 100px 180px;
+}
+
+.linea{
+    margin: -150px 120px 100px 180px;
+}
+
+.header-abbonamenti-filter select{
+    height: 26px;
+    width: 120px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 4px 28px 3px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.plan-monthly{
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+}
+
+.select-value{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-abbonamenti-filter img{
+    height: 4px;
+    width: 7.5px;
+    margin: 9px 13px 12px 10px;
+}
+
+.header-abbonamenti-filter p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 19px;
+    color: #4A5568;
+}
+
+.schede-abbonamenti{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 170px 0 170px;
+}
+
+.header-abbonamenti > p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #2D3748;
+    text-align: center;
+    margin: 10px 0 -10px 0;
+    padding-top: 82px;
+}
+
+.abbonamenti h2{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D3748;
+    padding-bottom: 216px;
+}
+
+.scheda-abbonamento{
+    height: 554px;
+    width: 350px;
+    text-align: center;
+    background: #FFFFFF;
+    transition: 0.5s;
+    box-shadow: 0px 4px 4px rgba(152, 149, 149, 0.25);
+}
+
+.scheda-abbonamento:nth-child(2){
+    margin-top: -41px;
+}
+
+.scheda-abbonamento:nth-child(2):hover{
+    box-shadow: 0px 7px 7px #EA0774;
+    transition: 0.5s;
+}
+
+.scheda-abbonamento:nth-child(2) .bottone-abbonamento{
+    background: #EA0774;
+    color: white;
+}
+
+.header-scheda{
+    color: #2D3748;
+    margin: 10px 25px 0 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-scheda h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.abbonamenti h1{
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.scheda-abbonamento p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 24px 0 24px;
+    text-align: left;
+    color: #4A5568;
+}
+
+.lista-abbonamento{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.lista-abbonamento li{
+    padding: 3px;
+    list-style: none;
+}
+
+.lista-abbonamento li:hover{
+    text-decoration: underline;
+}
+
+.lista-abbonamento img{
+    height: 10px;
+    width: 10px;
+    margin-left: -70px;
+    margin-right: 25px;
+}
+
+.bottone-abbonamento{
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    height: 70px;
+    color: #2D3748;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
 }
