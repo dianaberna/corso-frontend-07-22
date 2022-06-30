@@ -202,19 +202,6 @@ section img {
     justify-content: center;
 }
 
-/*
-#image_circle--testimonial:hover {
-    padding: 6px;
-}
-
-.section__image__circle img:hover {
-    padding: 3px;
-    border-radius: 50%;
-    border: 5px solid #706FE5;
-    display: flex;
-    justify-content: center;
-} */
-
 .section__testimonial h2 {
     font-weight: 700;
     font-size: 24px;
