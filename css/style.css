@@ -3,12 +3,12 @@
     rosa -> DC4298 
     azzurro -> 086BED
 */
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap'); */
 
 html {
     font-family: 'Maven Pro', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 body {
@@ -575,7 +575,6 @@ scheda sotto ai loghi (Silvio)
     opacity: 0.5;
 }
 
-
 #Testimonial>div {
     display: flex;
     flex-direction: row;
@@ -603,7 +602,6 @@ scheda sotto ai loghi (Silvio)
     font-size: 25px;
     line-height: 100%;
 }
-
 
 .Testimonial_Imgtest {
     display: flex;
@@ -638,7 +636,6 @@ scheda sotto ai loghi (Silvio)
 
 /* Initial progect section 8 pifferi  */
 section {
-    font-family: 'Poppins', sans-serif;
     background-color: #F5F5F5;
     text-align: center;
     padding: 120px 0 84px 0;
