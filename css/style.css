@@ -16,11 +16,11 @@ body {
     margin: 0 100px;
 }
 
-h1{
+h1 {
     font-size: 68px;
 }
 
-h2{
+h2 {
     font-size: 40px;
 }
 
@@ -32,7 +32,7 @@ button {
     white-space: nowrap;
 }
 
-.button--pink{
+.button--pink {
     color: #ffffff;
     background-color: #DC4298;
     border: 1px solid #DC4298;
@@ -40,12 +40,12 @@ button {
     transition: 0.4s;
 }
 
-.button--pink:hover{
+.button--pink:hover {
     border: 1px solid #DC4298;
     background-color: #ffffff;
     color: #DC4298;
     text-decoration: underline;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     transition: 0.4s;
 }
 
@@ -56,12 +56,12 @@ button {
     transition: 0.4s;
 }
 
-.button--white:hover{
+.button--white:hover {
     color: #ffffff;
     background-color: #DC4298;
     border: 1px solid #DC4298;
     text-decoration: underline;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     transition: 0.4s;
 }
 
@@ -74,50 +74,50 @@ nav {
     padding: 35px 40px 0 0px;
 }
 
-nav a{
+nav a {
     padding-right: 52px;
     text-decoration: none;
     color: black;
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
 }
 
 /* Hero section - Avallone */
 
-#hero{
+#hero {
     display: flex;
     gap: 10rem;
 }
 
-#hero > div{
+#hero>div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 4rem;
 }
 
-#hero h1{
+#hero h1 {
     margin-top: 100px;
     margin-bottom: 0;
     line-height: 135%;
     font-weight: 800;
 }
 
-#hero p{
+#hero p {
     margin: 0px;
     font-size: 20px;
     line-height: 165%;
     letter-spacing: 0.5px;
 }
 
-#hero h1 + img{
+#hero h1+img {
     width: 393.5px;
     height: 14.07px;
 }
 
-#hero__image{
+#hero__image {
     margin-top: 60px;
     width: 50%;
     max-width: 50%;
@@ -126,7 +126,7 @@ nav a:hover{
     align-items: center;
 }
 
-.hero__container{
+.hero__container {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -135,11 +135,11 @@ nav a:hover{
     justify-content: space-around;
 }
 
-.hero__container img{
+.hero__container img {
     width: 100px;
 }
 
-.avatar__circleMask{
+.avatar__circleMask {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -151,16 +151,16 @@ nav a:hover{
     border: 1px solid #F1B1D5;
 }
 
-.avatar__circleMask:not(:first-child){
+.avatar__circleMask:not(:first-child) {
     margin-left: -20px;
 }
 
-.hero__container > div{
+.hero__container>div {
     position: relative;
     display: flex;
 }
 
-.hero__container p{
+.hero__container p {
     font-weight: 500;
     font-size: 14px;
     line-height: 165%;
@@ -168,22 +168,22 @@ nav a:hover{
     color: #230F0F;
 }
 
-.votation{
+.votation {
     flex-direction: column;
 }
 
-.votation p{
+.votation p {
     white-space: nowrap;
     margin: 0px;
 }
 
-.votation__stars{
+.votation__stars {
     display: flex;
 }
 
 /* GRUPPO SCHEDE CORSO - Michele & Leonardo */
 
-.courses{
+.courses {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -200,8 +200,8 @@ nav a:hover{
     text-transform: capitalize;
     color: #230F0F;
 }
-  
-.courses__nav{
+
+.courses__nav {
     position: relative;
     width: 100%;
     padding: 14px 14px;
@@ -209,7 +209,7 @@ nav a:hover{
     font-weight: bold;
 }
 
-.courses__nav--scrollable{
+.courses__nav--scrollable {
     gap: 10px;
     overflow: scroll;
     display: flex;
@@ -218,23 +218,23 @@ nav a:hover{
     padding: 20px 0;
 }
 
-.courses__nav button{
+.courses__nav button {
     white-space: nowrap;
     border-radius: 100px;
 }
 
-.courses__nav button:last-child{
+.courses__nav button:last-child {
     margin-right: 50px;
 }
 
-.courses__nav--gradient{
+.courses__nav--gradient {
     position: absolute;
     width: 10%;
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 100%);
 }
 
 ::-webkit-scrollbar {
@@ -244,28 +244,28 @@ nav a:hover{
     background-color: transparent;
 }
 
-.courses__nav > button {
+.courses__nav>button {
     border-radius: 100px;
     margin-left: 20px;
 }
 
 .courses .card {
     box-sizing: border-box;
-    overflow:hidden;
+    overflow: hidden;
     background: #FFFFFF;
     border: 1px solid #eceff4;
     border-radius: 8px;
     width: 368px;
     height: 500px;
-    padding: 0px 23px 1.8rem 24px ;
-    margin:14px;
+    padding: 0px 23px 1.8rem 24px;
+    margin: 14px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.courses .card > img {
-    margin: 0 -24px 0 ;
+.courses .card>img {
+    margin: 0 -24px 0;
 }
 
 .card__view {
@@ -279,7 +279,7 @@ nav a:hover{
     width: 48px;
     height: 20px;
     margin-top: 140px;
-    
+
     font-size: 15px;
     color: #DC4298;
     font-weight: 500;
@@ -289,12 +289,12 @@ nav a:hover{
     align-content: center;
 }
 
-.card__content{
+.card__content {
     max-width: 0.8;
     padding: 0%;
 }
 
-.card__content--data{
+.card__content--data {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.4px;
@@ -303,12 +303,12 @@ nav a:hover{
     margin-bottom: 12px;
 }
 
-.card__content--title{   
+.card__content--title {
     font-weight: 800;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.6px;
-    margin: 0;   
+    margin: 0;
 }
 
 .card__content--description {
@@ -321,7 +321,7 @@ nav a:hover{
     padding: 0;
 }
 
-.card__content--price{
+.card__content--price {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -335,7 +335,7 @@ nav a:hover{
     padding: 4rem 0;
 }
 
-#partner p{
+#partner p {
     font-weight: 600;
     width: 20rem;
     font-size: 28px;
@@ -350,27 +350,27 @@ nav a:hover{
     margin-bottom: 28px;
 }
 
-.card__content--price > p{
+.card__content--price>p {
     font-weight: 700;
-    font-size :18px;
+    font-size: 18px;
     color: #DC4298;
 }
 
-.card__content--price > p del{
-    color:#999;
+.card__content--price>p del {
+    color: #999;
     font-weight: 400;
 }
 
-.card__content--price > button{
+.card__content--price>button {
     padding: 10px 28px;
     font-size: 12px;
-} 
+}
 
 /* ==============================
 scheda sotto ai loghi (Silvio)
 ============================= */
 
-.section__2column{
+.section__2column {
     display: flex;
     flex-wrap: nowrap;
     padding: 0 40px;
@@ -379,17 +379,17 @@ scheda sotto ai loghi (Silvio)
     padding: 4rem 0;
 }
 
-.section__content{
+.section__content {
     align-self: flex-start;
 }
 
-.section__image{
+.section__image {
     width: 550px;
     height: 450px;
     border-radius: 12px;
 }
 
-.section__content--title{
+.section__content--title {
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
@@ -397,38 +397,38 @@ scheda sotto ai loghi (Silvio)
     margin-top: 0px;
 }
 
-.section__content--body{
+.section__content--body {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: #4D4D4D;
 }
 
-.section__author{
+.section__author {
     padding: 0px;
 }
 
-.section__author--name{
+.section__author--name {
     font-size: 26px;
     font-weight: 600;
     line-height: 39px;
     color: #1C1D4E;
 }
 
-.section__author--job{
+.section__author--job {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #80848E;
 }
 
-.section__line{
+.section__line {
     height: 1px;
     border: 0px;
     background-color: #DCDCE6;
 }
 
-.button__arrow{
+.button__arrow {
     width: 64px;
     height: 64px;
     position: relative;
@@ -444,23 +444,23 @@ scheda sotto ai loghi (Silvio)
     margin: 20px 0;
 }
 
-.consulting > div{
+.consulting>div {
     width: 574px;
     height: 350px;
 }
 
-.consulting > div:last-child{
+.consulting>div:last-child {
     overflow: hidden;
 }
 
-.consulting--bgRowRose{
-    position:absolute;
+.consulting--bgRowRose {
+    position: absolute;
     z-index: -1;
     width: 100% !important;
     background-color: #DC4298;
 }
 
-.consulting p{
+.consulting p {
     display: inline-block;
     text-transform: capitalize;
     font-size: 40px;
@@ -469,15 +469,15 @@ scheda sotto ai loghi (Silvio)
     color: #ffffff;
 }
 
-.consulting--circleRose{
+.consulting--circleRose {
     border-radius: 100%;
     width: 569px;
-    height:569px;
+    height: 569px;
     margin-top: 10px;
     background: #D2388F;
 }
 
-.consulting--circleRose img{
+.consulting--circleRose img {
     margin-top: 20px;
 }
 
@@ -486,30 +486,26 @@ scheda sotto ai loghi (Silvio)
     ====================================
  */
 
-#card__header
-{
+#card__header {
     margin-top: 20px;
 }
 
 
-.card_row
-{
-    display:flex ;
+.card_row {
+    display: flex;
     flex-direction: row;
 
 }
 
-.card_sub_col
-{
+.card_sub_col {
     display: flex;
     flex-direction: row;
     gap: 30px;
-   padding-left:20px ;
+    padding-left: 20px;
 
 }
 
-#card_title
-{
+#card_title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -517,16 +513,14 @@ scheda sotto ai loghi (Silvio)
 
 }
 
-.card_description
-{
+.card_description {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     color: #2E3E5C;
 }
 
-.card__copy
-{
+.card__copy {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
@@ -535,20 +529,17 @@ scheda sotto ai loghi (Silvio)
 
 
 
-.cardlist
-{
+.cardlist {
     margin-top: 40px;
 }
 
 
-#banking
-{
+#banking {
     width: 596px;
     height: 448px;
 }
 
-#card_title
-{
+#card_title {
     color: #1E1F4B;
     font-weight: 700;
     font-size: 40px;
@@ -557,25 +548,22 @@ scheda sotto ai loghi (Silvio)
     text-transform: capitalize;
 }
 
-#card_text
-{
+#card_text {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     color: #2E3E5C;
 }
 
-.card_sub_description
-{
+.card_sub_description {
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     text-transform: capitalize;
-     color: #2E3E5C;
+    color: #2E3E5C;
 }
 
-.img_description
-{
+.img_description {
     border-radius: 10px;
     width: 263px;
     height: 188px;
@@ -588,14 +576,14 @@ scheda sotto ai loghi (Silvio)
 }
 
 #Testimonial {
-/*     display: flex;
+    /*     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: space-between; */
 }
-    
-#Testimonial > div {
+
+#Testimonial>div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -603,16 +591,16 @@ scheda sotto ai loghi (Silvio)
     justify-content: space-between;
 }
 
-.testimonial__author{
+.testimonial__author {
     display: flex;
     gap: 20px;
 }
 
-.testimonial__banner{
+.testimonial__banner {
     display: flex;
 }
 
-.Testimonial_Testo{
+.Testimonial_Testo {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -624,26 +612,24 @@ scheda sotto ai loghi (Silvio)
 }
 
 
-.Testimonial_Imgtest{
+.Testimonial_Imgtest {
     display: flex;
     flex-direction: row;
     align-self: auto;
 }
 
-.Testimonial_Testino{
+.Testimonial_Testino {
     font-size: 15px;
     color: #DC4298;
     font-weight: 500;
     letter-spacing: -0.2px;
 }
 
-.Testimonial_Testofondo{
+.Testimonial_Testofondo {
     font-size: 20px;
 }
 
-@media screen and (max-width: 480px){
-
-}
+@media screen and (max-width: 480px) {}
 
 /* Initial progect section 8 pifferi  */
 section {
