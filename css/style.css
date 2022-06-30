@@ -643,6 +643,58 @@ scheda sotto ai loghi (Silvio)
 
 
 @media screen and (max-width: 480px){
+    
+    .section__image{
+        width: 28rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .section__2column{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .card_row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .card__header{
+        width: 18rem;
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .card__title{
+        font-size: 1.6rem;
+    }
+
+
+
+    .card_row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .card_sub_col{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
     margin-top: -50px;
