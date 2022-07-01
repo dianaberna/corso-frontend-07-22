@@ -12,6 +12,8 @@ body{
     background-color:#F9F7F4;
     width: 23.4em;
     height: 50.7em;
+
+
 }
 
 .breadcrumb__list
@@ -62,6 +64,21 @@ span
     line-height: 0.9em;
 }
 
+.card
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.card__copy
+{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+}
 
 .card__title span
 {
@@ -87,8 +104,10 @@ span
 .list
 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 4em;
+    justify-content: center;
 }
 
 .list__item
@@ -98,6 +117,22 @@ span
     gap: 2em;
 }
 
+
+.list__item__crust
+{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+}
+
+.list__button
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
 
 #size
 {
@@ -177,6 +212,11 @@ span
     color: var(--orange);
 }
 
+.button__item
+{
+    padding-left: 20px;
+}
+
 
 
 
@@ -186,6 +226,8 @@ span
     margin-top: 2.5em;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .tabs__list
@@ -215,7 +257,7 @@ span
 {
     margin-top: 30px;
     position: relative;
-    left: 1.2em;
+    left: 2em;
 }
 
 
