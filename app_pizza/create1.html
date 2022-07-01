@@ -1,115 +1,112 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create your own pizza</title>
-
-    <!--foglio di stile-->
+    <title>App pizza</title>
     <link rel="stylesheet" href="../app_pizza/style.css">
 
 </head>
 <body>
     <div class="breadcrumb">
         <div class="breadcrumb__list">
-            <div class="breadcrumb__item--wrap">
-                <div class="breadcrumb__item">
-                <i id="crumb--color" class="fa-solid fa-circle-chevron-left"></i>
+            <div class="breadcrumb__item">
+                <div class="breadcrumb__link">
+                    <i id="crumb--color" class="fa-solid fa-circle-chevron-left"></i>
+                </div>
+                <div class="breadcrumb__link">
+                    <span id="step_1">Step1</span><span id="step2">/2</span>
                 </div>
             </div>
-
-            <div class="breadcrumb__item">
-                <span>Step 1 </span><span>/2 </span> 
-            </div>
         </div>
     </div>
-
-    <div class="card">
-        <div class="card__body">
-            <div class="card__title">
-                <span>Create Your Own Pizza</span>
-            </div>
-            <div class="card__copy">
-                <p>Create your own pizza by choosing a crust, sauce and <br>
-                    toppings! Select from three crust sizes & thincknesses,<br> 
-                    choice of sauce over 10 individual toppings
-                </p>
-            </div>
-            <div class="card__subtitle">
-                <p>You can choose upto 4 FREE toppins and 4 Extra<br> 
-                    toppings for £0.55 each</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="list">
-        <div class="list__title__item">
-            <p id="size">Size</p>
-         </div>
-        <div class="list__item">
-            <div class="item__attr__crust--size">
-                <button class="size" type="button">
-                    <p>7 inch</p> 
-                    <p>£5.99</p>
-                </button>
-            </div>
-            <div class="item__attr__crust--size">
-                <button  class="size" type="button">
-                    <p>9.5 inch</p>
-                    <p>£11.99</p>
-                </button>
-            </div>
-            <div class="item__attr__crust--size">
-                <button  class="size" type="button">
-                    <p>11.5 inch</p>
-                    <p>£13.99</p>
-                </button>
-            </div>
-            <div class="item__attr__crust--size">
-                <button  class="size" type="button">
-                    <p>13.5 inch</p>
-                    <p>£15.99</p>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="list__button">
-        <div class="list__title__item">
-            <p id="crust__title">Crust</p>
-         </div>
-         <div class="list__item__crust">
-            <div class="button__item">
-                <button class="crust" type="button">
-                    <p>Classic Crust</p> 
-                </button>
-            </div>
-
-            <div class="button__item">
-                <button class="crust" type="button">
-                    <p>Italian Crust<br> +£1.00</p>
- 
-                </button>
-            </div>
-         </div>
-    </div>
-
 
     <div class="tabs">
-        <span id="topping">Topping Style</span>
-        <div class="tabs__list">
-            <div class="tabs__img">
-                <button class="pizza" type="button"><img src="../app_pizza/assets/pizza2.png"></button>
+        <div class="tabs__section">
+            <div class="tabs__title">
+                <p>Create Your Own Pizza</p>
             </div>
-
-            <div class="tabs__img">
-                <button class="pizza" type="button"><img src="../app_pizza/assets/pizza.png"></button>
+            <div class="tabs__body">
+                <p> Create your own pizza by choosing a crust, sauce and <br>
+                    toppings! Select from three crust sizes & thincknesses,<br> 
+                    choice of sauce over 10 individual topping</p>
+            </div>
+            <div class="tabs__body">
+                <p id="sub__text">You can choose upto 4 FREE toppins and 4 Extra toppings for £0.55 each</p>
             </div>
         </div>
-        <div class="button__next">
-        <button id="next" type="button">NEXT</button>
-        <div>
+    </div>
+
+    <div class="input-group-wrap">
+        <div class="input-group-title">
+            <p>Size</p>
+        </div>
+        <div class="input-group">
+            <div class="input">
+                <button>
+                    <p>7 inch<br>
+                    £5.99</p>
+                </button>
+            </div>
+            <div class="input">
+                <button>
+                    <p>9.5 inch<br>
+                    £11.99</p>
+                </button>
+            </div>
+            <div class="input">
+                <button>
+                    <p>11.5 inch<br>
+                    £13.99</p>
+            </button>
+            </div>
+            <div class="input">
+                <button>
+                    <p>13.5 inch<br>
+                    £15.99</p>
+            </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-group">
+        <p>Crust</p>
+        <div class="button-wrap">
+            <div class="button__prepend">
+                <button>
+                    <p>Classic Crust</p>
+                </button>
+            </div>
+            <div class="button__prepend">
+                <button>
+                    <p>Italian Crust<br>
+                    +£1.00</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-group-pizza">
+        <p>Topping style</p>
+        <div class="button-wrap-pizza">
+            <div class="button__prepend-pizza">
+                <button>
+                    <img class="" src="pizza.png">
+                </button>
+            </div>
+            <div class="button__prepend-pizza">
+                <button>
+                    <img class=""                                                             src="pizza2.png">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-next">
+        <div class="butto-wrap">
+            <button id="btn_next" type="button">Next</button>
+        </div>
     </div>
 
 
@@ -122,6 +119,13 @@
 
 
 
-     <script src="https://kit.fontawesome.com/33ac70226a.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/33ac70226a.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
