@@ -103,7 +103,6 @@ nav a {
     color: #ffffff;
     font-weight: 400;
     background-color: var(--bright-orange);
-   
 }
 
 /*Cards section*/
@@ -112,22 +111,18 @@ nav a {
     margin: 1.75rem 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 
 
 .cards__template{
-    margin: 0.5rem 0.25rem;
+    margin: 0.5rem 0;
     padding:  0.1rem;
 
     width: 11rem;
-    height: 12.5rem;
+    height: 13rem;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     
     color: #000;
 
@@ -139,12 +134,20 @@ nav a {
     padding:0 0.5rem 0 0.5rem;
 }
 
+.card__flexcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .cards__text p{
     margin-top: 0.2rem;
     margin-bottom: 0;
 }
 
 .cards__text {   
+    margin: 0;
     font-size: 0.9rem;
     display: flex;
     flex-direction: column;
@@ -173,6 +176,7 @@ nav a {
 
 .cards__template button{
     height: 2rem;
+    width: 6rem;
 
     font-size: 0.75rem;
     font-weight: 600;
@@ -183,4 +187,10 @@ nav a {
     border-radius: 18px;
     
     margin-top: 1rem;
+}
+
+.cards__CYOpizza{
+    overflow: hidden;
+    background-color: var(--bg-gradient);
+    color: #fff;
 }
