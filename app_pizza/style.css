@@ -34,6 +34,7 @@ body{
     width: 2.5em;
     height: 2.5em;
     background-color: white;
+    border-radius: 50%;
 }
 
 
@@ -57,4 +58,26 @@ span
     font-weight: 600;
     font-size: 1.8;
     line-height: 0.9em;
+}
+
+
+.card__title span
+{
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+.card__copy p
+{
+    color:var(--light-grey);
+    font-weight: 300;
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.card__subtitle p
+{
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.2em;
 }
