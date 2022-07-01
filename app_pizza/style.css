@@ -9,7 +9,9 @@
 }
 
 body{
-    background-color:#F5F5F5;;
+    background-color:#F9F7F4;
+    width: 23.4em;
+    height: 50.7em;
 }
 
 .breadcrumb__list
@@ -80,4 +82,157 @@ span
     font-weight: 400;
     font-size: 0.9em;
     line-height: 1.2em;
+}
+
+.list
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4em;
+}
+
+.list__item
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+
+#size
+{
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height:1.1em ;
+    opacity: 0.5;
+}
+
+.item__attr__crust--size button
+{
+    border: none;
+   width: 5em ;
+   height: 3.5;
+   white-space: nowrap;
+   line-height: 0.5em;
+   background-color: white;
+   border-radius: 0.6em;
+   text-align: center;
+}
+
+.size p:first-child
+{
+    font-weight: 400;
+    font-size: 0.8em;
+    opacity: 0.5;
+
+}
+
+.size p:last-child
+{
+    font-weight: 600;
+    font-size: 1em;
+}
+.size:hover
+{
+    border:solid;
+    border-color: var(--orange);
+
+}
+
+.size p:first-child:hover
+{
+    font-weight: 400;
+    opacity: 100;
+
+}
+
+.size p:last-child:hover
+{
+    color: var(--orange);
+    box-shadow: -1px -6px 48px -20px #000000;
+}
+
+#crust__title
+{
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height:1.1em ;
+    opacity: 0.5;
+}
+
+
+.crust
+{
+    width: 10.8em;
+    height: 3.8em;
+    background-color: white;
+    border: none;
+    border-radius: 0.6em;
+}
+
+.crust:hover
+{
+    border: solid;
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+
+
+
+
+.tabs
+{
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs__list
+{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.2em;
+    margin-top: 2.5em;
+}
+
+#topping
+{
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height:1.1em ;
+    opacity: 0.5;
+}
+
+
+.pizza
+{
+    background: none;
+    border: none;
+}
+
+.button__next
+{
+    margin-top: 30px;
+    position: relative;
+    left: 1.2em;
+}
+
+
+#next
+{
+    border: none;
+    width: 21em;
+    height: 3.5em;
+    border-radius: 1.8em;
+    background-color: var(--orange);
+    color: white;
+}
+
+#next:hover
+{
+    border: solid;
+    background-color: white;
+    color: var(--orange);
+    border-color: var(--orange);
 }
