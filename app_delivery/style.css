@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    background-color: #FAF2F9;
+}
+
+html{
+    font-size: 12px;
+}
+
+/*---------------------INIZIO HEADER---------------------*/
+header{
+    background-color: #FAF2F9;
+    height: 170px;
+    width: auto;
+    padding: 0 40px;    
+}
+
+.head-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.greeting{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.greeting p{
+    margin-bottom: -15px;
+    font-size: 1rem;
+    font-family: 'Quicksand';
+    transition: 0.4s;
+}
+
+.greeting h2{
+    font-family: 'Quicksand';
+    font-size: 2rem;
+    transition: 0.4s;
+}
+
+.image img:nth-child(1){
+    position: absolute;
+    margin-left: 36px;
+    transition: 0.4s;
+}
+
+.image{
+    margin-top: 40px;
+    transition: 0.4s;
+}
+
+.search input{
+    height: 40px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    width: 68%;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search button{
+    background-color: white;
+    height: 42px;
+    width: 40px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+}
+
+/*---------------------FINE HEADER---------------------*/
+
+
+.home{
+    background-color: white;
+    border-radius: 16px 16px 0 0;
+    padding: 0 30px 200px 30px;
+}
+
+
+/*---------------------INIZIO CATEGORIES---------------------*/
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.categories p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000426;
+    transition: 0.4s;
+}
+
+.categories a{
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 13px;
+    height: 15px;
+    line-height: 120%;
+    text-align: right;
+    letter-spacing: 1.25px;
+    color: #F24296;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+
+.categories a:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.scrolling__nav--scrollable{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    transition: 0.4s;
+}
+
+::-webkit-scrollbar {
+    opacity: 0;
+    width: 0;
+    display: none;
+    background-color: transparent;
+    transition: 0.4s;
+}
+
+.scrolling__nav--scrollable{
+    gap: 10px;
+    overflow: scroll;
+    display: flex;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.scrolling-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F2F4F5;
+    border-radius: 12px;
+    width: 100px;
+    height: 90px;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.scrolling-card:hover{
+    box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.scrolling-card img{
+    width: 67px;
+    height: 37px;
+}
+
+.scrolling-card p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #000426;
+}
+
+
+/*---------------------INIZIO CATEGORIES---------------------*/
+
+
+
+/*---------------------INIZIO OFFER---------------------*/
+
+.offer{
+    background: #FCFBDE;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+}
+
+.offer > div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 30px ;
+}
+
+.offer img{
+    width: 170px;
+    height: 150px;
+    transition: 0.4s;
+}
+
+.offer p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    color: #000426;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.offer a{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 120%;
+    color: #F24296;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 0;
+}
+
+.offer a:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.offer h1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    color: #F24296;
+    transition: 0.4s;
+}
+
+/*---------------------FINE OFFER---------------------*/
+
+
+
+
+/*---------------------INIZIO PRODUCTS---------------------*/
+
+.products h1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000426;
+    transition: 0.4s;
+}
+
+.all-product-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,10rem);
+    justify-content:space-around;
+    gap: 2rem;
+    padding-right: 1rem;
+    transition: 0.4s;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    height: 14rem;
+    width: 9rem;
+    background: #F2F4F5;
+    border-radius: 12px;
+    padding: 10px 10px 0 10px;
+    transition: 0.4s;
+}
+
+.product-card:hover{
+    box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.foot-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    padding-bottom: 10px;
+    transition: 0.4s;
+}
+
+.product-card h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 120%;
+    color: #000426;
+    margin: 0;
+    padding: 0;
+    transition: 0.4s;
+}
+
+.product-card p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 120%;
+    color: #000426;
+    margin: 0;
+    transition: 0.4s;
+}
+
+.product-card h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000426;
+    transition: 0.4s;
+}
+
+.product-card button{
+    background: #F24296;
+    border-radius: 42px;
+    border: 2px solid #F24296;
+    color: white;
+    width: 34px;
+    height: 34px;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+.product-card button:hover{
+    border: 2px solid #F24296;
+    background-color: white;
+    color: #F24296;
+    transition: 0.2s;
+}
+
+.product-card img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+/*---------------------FINE PRODUCT---------------------*/
+
+
+
+
+/*---------------------INIZIO MEDIA 820PX---------------------*/
+
+@media screen and (min-width: 760px){
+
+    .scrolling-card img{
+        padding: 0 15px;
+    }
+
+    .offer img{
+        width: 200px;
+        height: 180px;
+        padding-left: 30px;
+    }
+
+    .offer p{
+        padding: 0 50px;
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    
+    .offer a{
+        margin: 0 50px;
+        font-size: 2rem;
+    }
+    
+    .offer h1{
+        padding: 0 50px;
+        font-size: 3rem;
+    }
+
+    .scrolling-card p{
+        font-size: 1rem;
+    }
+}
+
+
+
+/*---------------------INIZIO MEDIA 1280PX---------------------*/
+
+@media screen and (min-width: 1280px) {
+    html{
+        font-size: 14px;
+    }
+}
