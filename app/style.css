@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+html{
+    font-family: 'Poppins', sans-serif;
+}
+.Welcome_Screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: "poppins";
+    margin-top: 10%;
+}
+.started__button{
+    padding: 17.5px 57.5px;
+    background-color: #827397;
+    color: #ffffff;
+    border-radius: 8px;
+    margin-top: 5%;
+    border: 0px;
+}
+.title__text{
+    font-weight: 700;
+    font-size: 24px;
+    color: #5F5B5B;
+}
+.paragraph__text{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ADA8A8;
+}
+.All__ScreenSelection__Buttons{
+    display: flex;
+}
+#ScreenSelection__Buttons{
+    padding: 5px 15px;
+    background-color: #ffffff;
+    border-radius: 17px;
+}
+#ScreenSelection__Buttons:hover{
+    padding: 5px 15px;
+    background-color: #827397;
+    border-radius: 17px;
+}
