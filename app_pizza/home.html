@@ -7,15 +7,51 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+
     <nav>
         <i class="fa-solid fa-bars"></i>
         <a href="#home" class="active">JKM Resto</a>
         <i class="fa-solid fa-magnifying-glass"></i>
     </nav>
 
-    <div #id="home__scrollbar"></div>
+    <div id="home__scrollbar">
+        <div id="home__scrollbar--buttons">
+            <button>Starters</button>
+            <button>Asian</button>
+            <button>Placha & Roasts & Grills</button>
+            <button>Classics</button>
+            <button>Vegan</button>
+        </div>
+    </div>
 
+    <div id="home__cards--section">
+
+        <div class="home__cards--template" id="home__cards--CYOpizza">
+            <div class="home__cards--canvases">
+                <img src="/app_pizza/assets_pizza/CYO Pizza BG.png" alt="Create Your Own Pizza">
+                <div class="home__cards--text">
+                    <p class="home__cards--title">Create Your Own Pizza</p>
+                    <p class="home__cards--description">Choose From Our Options Of Design And Make Your Own Pizza.</p>
+                </div>
+                <button>Create Now</button>
+            </div>
+        </div>
+
+        <div class="home__cards--template" >
+            <div class="home__cards--canvases">
+                <img src="/app_pizza/assets_pizza/pizza-0.png" alt="Fresh Farm House">
+                <div class="home__cards--text">
+                    <p class="home__cards--price">£14.25</p>
+                    <p class="home__cards--title">Fresh Farm House</p>
+                    <p class="home__cards--description">crisp capsicum, succulent mushrooms and fresh tomatoes</p>
+                </div>
+                <button>Add</button>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 <script src="https://kit.fontawesome.com/33ac70226a.js" crossorigin="anonymous"></script>
