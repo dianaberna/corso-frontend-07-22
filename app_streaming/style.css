@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    margin-top: 24px;
+    margin-left:5%;
+    margin-right:5%;
+    color:white;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    
+}
+
+main {
+    
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size:1.25rem;
+    line-height:1.87rem;
+    letter-spacing: 0.016rem;
+    margin-bottom:16px;
+}
+
+
+
+#poster1 {
+    position:relative;
+}
+
+#poster1 > img {
+    margin-right:16px;
+
+}
+
+#poster1 > .fa-solid {
+    color:red;
+    display:flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.fa-circle-play {
+    color:white;
+}
