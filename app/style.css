@@ -1,0 +1,137 @@
+
+.Gatto_Testo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+
+.Gatto_Prezzo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20rem;
+    font-size: 2rem;
+    margin-top: -3rem;
+
+}
+
+.boxwrapper {
+    display: flex;
+    margin-top: 2rem;
+  }
+  
+  .box1 {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #F5F5F5;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+
+  .box2 {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #F5F5F5;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+
+  .box3 {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #F5F5F5;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+
+  .box4 {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #F5F5F5;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+
+  .Testo_Grande_Violetto {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center; 
+    color: #827397;
+  }
+
+  .Testo_Piccolo_Argento {
+    font-size: small; font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:  #B4AEAE;
+  }
+
+.avatar__circleMask{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #F1B1D5;
+}
+
+.Testo_Piccolo_Argento2 {
+    font-size: small; font-family: Georgia, 'Times New Roman', Times, serif;
+    color:  #B4AEAE;
+  }
+
+
+  .Testo_Grande_Argento {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: large;
+    color:  #B4AEAE;
+    margin-top: 5rem;
+    
+  }
+
+  .button--mirtillo { 
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    padding: 14px 40px;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #827397;
+    border: 1px solid #827397;
+    height: 60px;
+    width: 310px;
+}
+
+.Icona_Telefono {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #827397;
+  margin-left: 14rem;
+  margin-top: -8rem;
+  
+}
+
+.Icona_Messaggio {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #827397;
+  margin-left: 18rem;
+  margin-top: -3rem;
+}
