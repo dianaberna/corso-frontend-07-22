@@ -37,14 +37,19 @@ nav{
     flex-direction: row;
 
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
 
-    /* padding: 0 1.4rem; */
+    padding: 0 1.4rem;
+    padding-top: 0.1rem;
 
     background: var(--bg-gradient);
     position: relative;
     justify-content: space-between;
     align-items: center;
+}
+
+nav div a{
+    padding-left: 1rem;
 }
 
 nav a {
@@ -94,6 +99,7 @@ nav a {
     border-radius: 200px;
 }
 #home__scrollbar button:first-child {
+    /* DA SOSTITUIRE CON ACTIVE */
     color: #ffffff;
     font-weight: 400;
     background-color: var(--bright-orange);
@@ -102,9 +108,8 @@ nav a {
 
 /*Cards section*/
 
-#home__cards--section{
-    margin: 2rem 0;
-    width: 11rem;
+#cards__section{
+    margin: 1.75rem 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -112,50 +117,70 @@ nav a {
 
 
 
-.home__cards--template{
+.cards__template{
     margin: 0.5rem 0.25rem;
-}
+    padding:  0.1rem;
 
-.home__cards--text p{
-    margin: 0.2rem;
-}
-
-.home__cards--title{
-    font-size: 0.9rem;
-    font-weight: 700;
-}
-
-.home__cards--price{
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: var(--dark-orange);
-}
-
-.home__cards--title{
-
-}
-
-.home__cards--canvases {
-    background: #fff;
     width: 11rem;
-    height: 13rem;
+    height: 12.5rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-self: center;
+    align-items: center;
+    text-align: center;
     
-    margin: 0;
-
     color: #000;
 
     background: #FFFFFF;
     border: 1px solid #F5F3EF;
     border-radius: 5px;
+    box-sizing: border-box;
 
-    overflow: hidden;
+    padding:0 0.5rem 0 0.5rem;
 }
 
-.home__cards--canvases img {
+.cards__text p{
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+}
+
+.cards__text {   
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cards__price{
+    font-weight: 400;
+    color: var(--dark-orange);
+}
+
+.cards__title{
+    font-weight: 700;
+}
+
+.cards__description{
+    font-weight: 300;
+    font-size: 10px;
+    color: #969AB0;
+}
+
+.cards__template img {
     align-self: center;
+}
+
+.cards__template button{
+    height: 2rem;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #FFFFFF;
+
+    background: var(--bright-orange);
+    box-shadow: 0px 3px 7px rgba(219, 162, 109, 0.24);
+    border-radius: 18px;
+    
+    margin-top: 1rem;
 }
