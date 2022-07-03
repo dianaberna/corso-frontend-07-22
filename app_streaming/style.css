@@ -1,0 +1,126 @@
+body {
+    background-color: black;
+    margin-top: 24px;
+    margin-left:5%;
+    margin-right:5%;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    
+}
+
+h1, h2 {
+    font-weight:600;
+    font-size:1.25rem;
+    line-height:1.87rem;
+    letter-spacing: 0.016rem;
+    margin-bottom:16px;
+}
+
+.section1 {
+    
+    margin-bottom:26px;
+    
+}
+
+.poster {
+    width: 14.063rem;
+    height: 18.75rem;
+    background-image: url(Poster.png);
+    background-repeat: none;
+    background-size: cover;
+    border-radius:12px;
+    margin-right: 16px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+main > .section1 > .poster > img {
+width: 3.576rem;
+height: 3.576rem;
+}
+
+.poster2 {
+    width: 14.063rem;
+    height: 18.75rem;
+    background-image: url(Poster2.png);
+    background-repeat: none;
+    background-size: cover;
+    border-radius:12px;
+    border: none;
+    margin-bottom: 15px;
+   
+}
+
+main > .section1 > .poster2 > img {
+    width: 3.576rem;
+    height: 3.576rem;
+    }
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+main > .section3 > #bottone1 {
+    border: none;
+    padding: 8px 16px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    margin-left:12px;
+}
+
+main > .section3 > .bottoni {
+    border: none;
+    padding: 8px 16px;
+    gap: 10px;
+    background: #000000;
+    border-radius: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color:white;
+    border: 1px solid #F5F5F5;
+    margin-left:12px;
+}
+
+main > .section4 > #bottone1{
+
+    width: 174px;
+    height: 232px;
+    border-radius: 12px;
+    margin-left:15px;
+    background-image: url('Poster3.png');
+    background-size: cover;
+    margin-bottom:15px;
+    border: none;
+}
+
+main > .section4 > #bottone2 {
+
+    width: 174px;
+    height: 232px;
+    border-radius: 12px;
+    margin-left:15px;
+    background-image: url('Poster4.png');
+    background-size: cover;
+    margin-bottom:15px;
+    border: none;
+}
