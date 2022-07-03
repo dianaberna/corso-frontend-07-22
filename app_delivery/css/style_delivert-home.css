@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Quicksand:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: auto 0;
+}
+
+html {
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+}
+
+#image__delivery {
+  /* MI FUNZIONA ANCHE SENZA IL FLEX. LO DEVO METTERE LO STESSO?*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17.7rem;
+  margin: 3.75rem auto 4.5rem;
+  background-image: url("../assets/delivery_man.png"), url("../assets/elipse.png");
+  background-position: center center, center bottom;
+  background-repeat: no-repeat;
+}
+
+main .conteiner {
+  background-color: #e663d4;
+  background: #FAF2F9;
+  box-shadow: 0 0.25rem 1.1rem rgba(153, 0, 134, 0.04);
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 2.3rem 1.8rem 1.8rem 1.8rem;
+}
+
+main h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000426;
+}
+
+main p {
+  color: #000426;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+
+#buttom__shop button {
+  width: 100%;
+  height: 2.6rem;
+  border: none;
+  border: 2 solid #F24296;
+  border-radius: 0.75rem;
+  background-color: #F24296;
+  margin: 3.25rem 0 2.3rem 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+/* MEDIA QUERY FOR ALL DEVICE */
+
+@media (min-width: 640px) {
+
+  html {
+    /* background-color: #F5F5F5; */
+    background-color: #1100ff;
+    font-size: 20px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  html {
+    /* background-color: #F5F5F5; */
+    background-color: #ff0077;
+    font-size: 16px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  html {
+    /* background-color: #F5F5F5; */
+    background-color: #d9ff00;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    /* background-color: #F5F5F5; */
+    background-color: #220966;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1536px) {
+  html {
+    /* background-color: #F5F5F5; */
+    background-color: #0e8041;
+    font-size: 16px;
+
+  }
+}

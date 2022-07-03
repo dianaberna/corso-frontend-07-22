@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
 
-:root{
+:root {
     --margin-template: 100px;
 }
 
@@ -108,8 +108,8 @@ nav a:hover {
     font-weight: 800;
 }
 
-#hero > div > p{
-/* #hero p { */
+#hero>div>p {
+    /* #hero p { */
     margin: 0px;
     font-size: 20px;
     line-height: 165%;
@@ -430,6 +430,7 @@ scheda sotto ai loghi (Silvio)
     border: 0px;
     background-color: #DCDCE6;
 }
+
 /* 
     rosa -> DC4298 
     azzurro -> 086BED
@@ -681,10 +682,17 @@ section img {
     margin: 0 46px;
 }
 
-#image_circle--testimonial {
+#image__circle--testimonial {
     padding: 2px;
     outline: 4px solid #706FE5;
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#image__circle--testimonial a {
     width: 100px;
     height: 100px;
     display: flex;
@@ -707,15 +715,32 @@ section img {
     margin-top: -15px;
 }
 
-/* End  progect section pifferi */
+@media screen and (max-width: 999px) {
 
+    /* media query pifferi */
+    .section__content img,
+    .image__quote,
+    .testimonial__image,
+    .section__image--testimonial {
+        display: none;
+    }
+
+    .section__content p {
+        width: auto;
+        padding: 0 20px 0 20px;
+    }
+
+    /* end media query pifferi */
+}
+
+/* End  progect section pifferi */
 .footer_menu_title {
     margin-left: 40px;
     align-content: flex-start;
     color: black;
-  }
+}
 
-                                        /*<--- START CSS Footer --->*/  
+/*<--- START CSS Footer --->*/
 .footer_menu_title {
     margin-left: 40px;
     align-content: flex-start;
@@ -723,79 +748,77 @@ section img {
 }
 
 footer {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer_content {
-display: flex;
-flex-direction: row;
-align-content: center;
-justify-content: flex-start;
-column-gap: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    column-gap: 8rem;
 }
 
 ul {
-margin-top: 0px;
-list-style-type: none;
+    margin-top: 0px;
+    list-style-type: none;
 }
 
-.column > div {
-/*flex: 0 0 23.33334%;*/
-display: flex;
-flex-direction: row;
+.column>div {
+    /*flex: 0 0 23.33334%;*/
+    display: flex;
+    flex-direction: row;
 }
 
-.big_column {
-
-}
+.big_column {}
 
 .copyright {
-background-color: black;
-padding: 20px 0px;
-padding-top: 0.5rem;
-padding-bottom: 0.5rem;
-background-position: center;
-align-content: center;
-color: white;
+    background-color: black;
+    padding: 20px 0px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-position: center;
+    align-content: center;
+    color: white;
 }
 
 .copyright p {
-text-align: center;
+    text-align: center;
 }
 
-                                        /*<--- END CSS Footer --->*/
+/*<--- END CSS Footer --->*/
 
 @media screen and (max-width: 480px) {
-    .Testimonial_Testo{
-        
+    .Testimonial_Testo {
+
         font-size: 20px;
 
-    }    
-    
-    .Testimonial_Testino{
-        
+    }
+
+    .Testimonial_Testino {
+
         font-size: 10px;
 
-    }    
+    }
 
-    .Testimonial_Testofondo{
-        
+    .Testimonial_Testofondo {
+
         font-size: 15px;
 
-    }    
-    
-    
-    .Testimonial_Imgtest{
-        
+    }
+
+
+    .Testimonial_Imgtest {
+
         width: 250px;
         height: 200px;
-        
-        
 
-    }    
 
-    .testimonial__author{
+
+    }
+
+    .testimonial__author {
         display: flex;
         gap: 10px;
     }
@@ -803,36 +826,41 @@ text-align: center;
 
 }
 
-.Login{
+.Login {
     display: flex;
     flex-direction: column;
     width: 1284px;
     height: 1406px;
 }
+
 .TitleLogin {
     font-weight: 600;
     font-size: 52px;
     line-height: 150%;
     text-transform: capitalize;
     color: #230F0F;
-    }
-.Login1{
+}
+
+.Login1 {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
-.NewAccount_text{
+
+.NewAccount_text {
     font-weight: 400;
     font-size: 32px;
     color: #01579B;
 }
+
 .Bottoni_Social {
-    display: flex; 
-    justify-content:space-evenly;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    font-weight:500px;
+    font-weight: 500px;
 }
-.Fb_Button{
+
+.Fb_Button {
     width: 320px;
     height: 78px;
     font-size: 32px;
@@ -843,7 +871,8 @@ text-align: center;
     background-color: #5856D6;
     border-color: #5856D6;
 }
-.Tw_Button{
+
+.Tw_Button {
     width: 320px;
     height: 78px;
     font-size: 32px;
@@ -854,7 +883,8 @@ text-align: center;
     border-color: #00BCD4;
     box-shadow: none;
 }
-.Go_Button{
+
+.Go_Button {
     width: 320px;
     height: 78px;
     font-size: 32px;
@@ -865,43 +895,51 @@ text-align: center;
     border-color: #D84226;
     box-shadow: none;
 }
-.OrLogin_Text{
+
+.OrLogin_Text {
     display: flex;
     justify-content: center;
     font-weight: 400px;
     font-size: 32px;
 }
-.Box_Mail{
+
+.Box_Mail {
     display: flex;
     justify-content: center;
 }
-.textbox{
+
+.textbox {
     font-weight: 400px;
     font-size: 24px;
     width: 1042px;
     height: 93px;
-    background-color:#00000017;
+    background-color: #00000017;
     border-color: 00000017;
 }
-.Remember_Checkbox1{
+
+.Remember_Checkbox1 {
     display: flex;
     align-items: center;
 }
-.remember_text{
+
+.remember_text {
     font-weight: 400;
     font-size: 32px;
-}g
-.Remember_Checkbox{
+}
+
+g .Remember_Checkbox {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.forgot_text{
+
+.forgot_text {
     font-weight: 400;
     font-size: 32px;
     color: #01579B;
 }
-.Continue__Button{
+
+.Continue__Button {
     width: 1042px;
     height: 98.02px;
     background-color: #FF9800;
@@ -911,10 +949,12 @@ text-align: center;
     font-size: 26px;
     border-color: #FF9800;
 }
-.continue_button{
+
+.continue_button {
     display: flex;
     justify-content: center;
 }
+
 /* FaqSecion - Sergio */
 /* .faqSection{
     display:flex;
@@ -930,8 +970,8 @@ text-align: center;
     background-color: #f0f0f0;
 } */
 
-.faqSection2{
-    display:flex;
+.faqSection2 {
+    display: flex;
     justify-content: left;
     flex-wrap: wrap;
 
@@ -941,23 +981,23 @@ text-align: center;
     padding: 10px var(--margin-template);
 }
 
-.faqSection2 > div{
+.faqSection2>div {
     min-height: 540px;
     width: 50%;
-    border:0px solid #cccccc;
+    border: 0px solid #cccccc;
 }
 
-.faqSection2--img{
+.faqSection2--img {
     max-width: 100%;
 }
 
-.faqSection2--menu > details{
-    overflow:hidden;
+.faqSection2--menu>details {
+    overflow: hidden;
     border-radius: 10px;
     margin: 18px 0;
 }
 
-.faqSection2--menu > details > summary{
+.faqSection2--menu>details>summary {
     color: #000000DE;
     background: #ffffff;
     font-weight: 600;
@@ -965,66 +1005,68 @@ text-align: center;
     cursor: pointer;
 }
 
-.faqSection2--menu > details[open] > summary{
+.faqSection2--menu>details[open]>summary {
     color: #ffffff !important;
     background: #8BC34A !important;
 }
 
-.faqSection2--menu > details > p{
+.faqSection2--menu>details>p {
     color: #000000DE;
     background-color: #ffffff;
     margin: 0;
     padding: 15px 15px 30px 15px;
 }
 
-.faqSection2--menu > details > ::marker{
+.faqSection2--menu>details> ::marker {
     color: #000000DE !important;
 }
-@media screen and (max-width: 480px){
+
+@media screen and (max-width: 480px) {
     body {
         margin: 0 30px;
     }
-    
-    #hero h1{
+
+    #hero h1 {
         margin-top: 50px;
         font-size: 36px;
     }
-    
-    #hero > div > p{
+
+    #hero>div>p {
         font-size: 20px;
         margin-top: -40px;
     }
-    
-    #hero h1 + img{
+
+    #hero h1+img {
         width: 200px;
         height: 13px;
     }
-    
-    #hero__image{
+
+    #hero__image {
         display: none;
     }
-    
-    .hero__container{
+
+    .hero__container {
         display: inline-block;
     }
-    
-    .hero__container button{
+
+    .hero__container button {
         margin-top: -30px;
     }
-    
-    .avatars{
+
+    .avatars {
         margin-top: 20px;
     }
-    
-    .votation{
+
+    .votation {
         margin-left: 180px;
         margin-top: -45px;
     }
-    
-    .votation p{
+
+    .votation p {
         font-size: 15px;
     }
 }
+
 @media screen and (max-width: 480px) {
 
     /* media query pifferi */
@@ -1046,47 +1088,45 @@ text-align: center;
 
 
 /* End  progect section pifferi */
-*/
-
-#salvi {
-background-image: url("../assets/lampada.png");
-background-repeat:no-repeat;
-margin-left:-100px;
-padding-left:100px;
-margin-right:-100px;
-padding-right:100px;
-font-family: sans-serif;
-text-align:left;
+*/ #salvi {
+    background-image: url("../assets/lampada.png");
+    background-repeat: no-repeat;
+    margin-left: -100px;
+    padding-left: 100px;
+    margin-right: -100px;
+    padding-right: 100px;
+    font-family: sans-serif;
+    text-align: left;
 
 
 }
 
-#salvi > div {
-display:flex;
-flex-direction: column;
-margin-left:50%;
-width: max-content;
+#salvi>div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    width: max-content;
 
 }
 
 #text {
-  
-   padding-top:100px;
-    
+
+    padding-top: 100px;
+
     font-weight: 600;
-    font-size:40px;
+    font-size: 40px;
     line-height: 54px;
-    color:#FFFFFF;
-    
+    color: #FFFFFF;
+
 
 }
 
 #text2 {
-    
-    font-size:20px;
-    
-  
-    font-size:20px;
+
+    font-size: 20px;
+
+
+    font-size: 20px;
     line-height: 100%;
     font-weight: 400;
     color: #FFFFFF;
@@ -1097,41 +1137,42 @@ form {
 
 
 
-padding-bottom:142px;
+    padding-bottom: 142px;
 
 }
 
 #email {
     width: 384px;
-    height:4rem;
+    height: 4rem;
     border-radius: 8px;
-    border:0px;
+    border: 0px;
 }
 
-[placeholder]{
+[placeholder] {
     padding-left: 24px;
 }
 
 button {
-    padding:0px 30px;
-    height:4rem;
-    margin-left:22px;
-    border-radius:8px;
+    padding: 0px 30px;
+    height: 4rem;
+    margin-left: 22px;
+    border-radius: 8px;
     background-color: #23262F;
-    font-weight:600;
-    font-size:20px;
+    font-weight: 600;
+    font-size: 20px;
     line-height: 20px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     border: 4px solid #23262F;
     box-sizing: content-box;
 }
 
 @media screen and (max-width: 480px) {
-    #salvi > div {
+    #salvi>div {
 
-        margin-left:0px;
+        margin-left: 0px;
     }
 }
+
 @media screen and (max-width: 999px) {
 
     /* media query pifferi */
@@ -1147,9 +1188,7 @@ button {
         padding: 0 20px 0 20px !important;
     }
 
-    section {
-        /* MANCA LA CENTRATURA  DEL SECTION NELLA VISUALIZZAZIONE MOBILE */
-    }
+
 
     /* end media query pifferi */
 }
