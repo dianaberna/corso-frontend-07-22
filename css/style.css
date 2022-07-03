@@ -435,7 +435,6 @@ scheda sotto ai loghi (Silvio)
     azzurro -> 086BED
 */
 
-
 .button__arrow {
     width: 64px;
     height: 64px;
@@ -665,13 +664,13 @@ section h2 {
 }
 
 .section__content p {
-    width: 670px;
+    width: 60rem;
     font-size: 16px;
     font-weight: 400;
     line-height: 3;
 }
 
-section .section__image__circle {
+section .section__image--circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1133,3 +1132,26 @@ button {
         margin-left:0px;
     }
 }
+@media screen and (max-width: 999px) {
+
+    /* media query pifferi */
+    .section__content img,
+    .image__quote,
+    .testimonial__image,
+    .section__image--testimonial {
+        display: none !important;
+    }
+
+    .section__content p {
+        width: auto !important;
+        padding: 0 20px 0 20px !important;
+    }
+
+    section {
+        /* MANCA LA CENTRATURA  DEL SECTION NELLA VISUALIZZAZIONE MOBILE */
+    }
+
+    /* end media query pifferi */
+}
+
+/* End  progect section pifferi */
