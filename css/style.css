@@ -426,6 +426,11 @@ scheda sotto ai loghi (Silvio)
     border: 0px;
     background-color: #DCDCE6;
 }
+/* 
+    rosa -> DC4298 
+    azzurro -> 086BED
+*/
+
 
 .button__arrow{
     width: 64px;
@@ -803,4 +808,117 @@ text-align: center;
     }
 
 
+}
+
+.Login{
+    display: flex;
+    flex-direction: column;
+    width: 1284px;
+    height: 1406px;
+}
+.TitleLogin {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #230F0F;
+    }
+.Login1{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.NewAccount_text{
+    font-weight: 400;
+    font-size: 32px;
+    color: #01579B;
+}
+.Bottoni_Social {
+    display: flex; 
+    justify-content:space-evenly;
+    align-items: center;
+    font-weight:500px;
+}
+.Fb_Button{
+    width: 320px;
+    height: 78px;
+    font-size: 32px;
+    font: weight 500px;
+    border-radius: 8px;
+    align-items: center;
+    color: #ffffff;
+    background-color: #5856D6;
+    border-color: #5856D6;
+}
+.Tw_Button{
+    width: 320px;
+    height: 78px;
+    font-size: 32px;
+    border-radius: 8px;
+    align-items: center;
+    color: #ffffff;
+    background-color: #00BCD4;
+    border-color: #00BCD4;
+    box-shadow: none;
+}
+.Go_Button{
+    width: 320px;
+    height: 78px;
+    font-size: 32px;
+    border-radius: 8px;
+    align-items: center;
+    color: #ffffff;
+    background-color: #D84226;
+    border-color: #D84226;
+    box-shadow: none;
+}
+.OrLogin_Text{
+    display: flex;
+    justify-content: center;
+    font-weight: 400px;
+    font-size: 32px;
+}
+.Box_Mail{
+    display: flex;
+    justify-content: center;
+}
+.textbox{
+    font-weight: 400px;
+    font-size: 24px;
+    width: 1042px;
+    height: 93px;
+    background-color:#00000017;
+    border-color: 00000017;
+}
+.Remember_Checkbox1{
+    display: flex;
+    align-items: center;
+}
+.remember_text{
+    font-weight: 400;
+    font-size: 32px;
+}
+.Remember_Checkbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.forgot_text{
+    font-weight: 400;
+    font-size: 32px;
+    color: #01579B;
+}
+.Continue__Button{
+    width: 1042px;
+    height: 98.02px;
+    background-color: #FF9800;
+    color: #ffffff;
+    font-style: Montserrat;
+    font-weight: 600;
+    font-size: 26px;
+    border-color: #FF9800;
+}
+.continue_button{
+    display: flex;
+    justify-content: center;
 }
