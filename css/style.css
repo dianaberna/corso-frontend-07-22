@@ -714,3 +714,60 @@ section img {
 }
 
 /* End  progect section pifferi */
+
+.footer_menu_title {
+    margin-left: 40px;
+    align-content: flex-start;
+    color: black;
+  }
+
+                                        /*<--- START CSS Footer --->*/  
+.footer_menu_title {
+    margin-left: 40px;
+    align-content: flex-start;
+    color: black;
+}
+
+footer {
+display: flex;
+flex-direction: column;
+}
+
+.footer_content {
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: flex-start;
+column-gap: 8rem;
+}
+
+ul {
+margin-top: 0px;
+list-style-type: none;
+}
+
+.column > div {
+/*flex: 0 0 23.33334%;*/
+display: flex;
+flex-direction: row;
+}
+
+.big_column {
+
+}
+
+.copyright {
+background-color: black;
+padding: 20px 0px;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+background-position: center;
+align-content: center;
+color: white;
+}
+
+.copyright p {
+text-align: center;
+}
+
+                                        /*<--- END CSS Footer --->*/
