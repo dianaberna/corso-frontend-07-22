@@ -401,3 +401,93 @@ header{
         font-size: 14px;
     }
 }
+
+html{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+.Image__Product{
+    display: flex;
+}
+.First__Line{
+    font-weight: 700;
+    font-size: 11px;
+    color: #F24296;
+}
+.Second__Line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+.Text__Title{
+    display: flex;
+    flex-direction: column;
+}
+.Third__Line{
+    font-weight: 300;
+    font-size: 13px;
+}
+.Fourth__Line{
+    display: flex;
+    align-items: center;
+}
+.Stars{
+    display: flex;
+    margin-right: 5%;
+    color: #FFD337;
+}
+.Discount__Botton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    font-size: 14px;
+    width: 100%;
+    height: 54px;
+    background-color: #FAF2F9;
+    color: #F7439A;
+    font-family: 'Quicksand';
+    border-radius: 12px;
+    border-color: transparent;
+}
+.Fifth__Line{
+    font-weight: 700;
+    font-size: 18px;
+}
+.Product__Paragraph{
+    font-weight: 300;
+    font-size: 15px;
+}
+.Last__Line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Quantity__Button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Buyer__Button{
+    width: 46px;
+    height: 46px;
+    padding: 13px;
+    background-color: #F24296;
+    border-radius: 50%;
+    color:white;
+    border-color: transparent;
+    margin: 10%;
+    font-size: 1rem;
+}
+.Buyer__ADD__Button{
+    width: 201px;
+    height: 46px;
+    background-color: #F24296;
+    font-weight: 800;
+    font-size: 13px;
+    border-radius: 12px;
+    color:white;
+    border-color: transparent;
+}
