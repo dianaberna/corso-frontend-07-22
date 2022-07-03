@@ -640,9 +640,6 @@ scheda sotto ai loghi (Silvio)
     font-size: 20px;
 }
 
-@media screen and (max-width: 480px){
-
-}
 
 /* Initial progect section 8 pifferi  */
 section {
@@ -770,3 +767,40 @@ text-align: center;
 }
 
                                         /*<--- END CSS Footer --->*/
+
+@media screen and (max-width: 480px) {
+    .Testimonial_Testo{
+        
+        font-size: 20px;
+
+    }    
+    
+    .Testimonial_Testino{
+        
+        font-size: 10px;
+
+    }    
+
+    .Testimonial_Testofondo{
+        
+        font-size: 15px;
+
+    }    
+    
+    
+    .Testimonial_Imgtest{
+        
+        width: 250px;
+        height: 200px;
+        
+        
+
+    }    
+
+    .testimonial__author{
+        display: flex;
+        gap: 10px;
+    }
+
+
+}
