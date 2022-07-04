@@ -5,35 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corso Frontend</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
-        html{
-            font-family: 'Poppins', sans-serif;
-            padding: 1rem;
-        }
-        ul{
-            list-style: decimal;
-        }
-        li{
-            width: 10rem;
-            height: 2rem;
-        }
-    </style>
+
 </head>
 <body>
-    <h1>Esercizi Corso Frontend</h1>
-    <h2>HTML/CSS</h2>
-    <ul>
-        <li><a href="./landing_page/index.html">Landing page</a></li>
-        <li><a href="./app/welcome.html">App Pet</a></li>
-        <li><a href="./app_pizza/home.html">App Pizza</a></li>
-        <li><a href="./app_delivery/home.html">App Delivery</a></li>
-        <li><a href="./app_streaming/home.html">App Streaming</a></li>
-    </ul>
+
     <h2>Javascript</h2>
-    <ul>
-        <li></li>
-    </ul>
+
     <script>
         /*
             dati quattro numeri restituire il minore e il maggiore
@@ -43,24 +20,36 @@
             maggiore = 4, minore = -2
         */
 
-        let a = [3, -1, 4, -2];
 
-        for(let i=0; i<a.length; i++){
-            console.log(a[i])
+
+
+        // let b = new Array()
+        // b.push(10)
+
+        // b.push(12)
+
+        // b.push(33)
+
+        // for(let i=0; i<b.length; i++){
+        //     console.log(b[i])
+        // }
+
+
+        let array = [3,-1, 4,-2,18];
+        let max = 0;
+        let min = 0
+
+        for(let i = 0; i < array.length; i++){
+            if(array[i] >= max){
+                max = array[i]
+            }
+            if(array[i] <= min){
+                min = array[i]
+            }
+            console.log(array[i]);
         }
-        
-
-
-        let b = new Array()
-        b.push(10)
-
-        b.push(12)
-
-        b.push(33)
-
-        for(let i=0; i<b.length; i++){
-            console.log(b[i])
-        }
+        console.log("il maggiore è "+max)
+        console.log("il minore è "+min)
 
     </script>
 </body>
