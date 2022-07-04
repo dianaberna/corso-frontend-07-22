@@ -1,0 +1,79 @@
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 26px;
+  }
+  .grid > div {
+    font-size: 5vw;
+  
+    /* text-align: center; */
+  }
+  .main {
+    @import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+  
+    font-family: "Yellowtail";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 100%;
+  
+    text-align: center;
+    letter-spacing: 0.02em;
+  
+    color: #000000;
+  }
+  #first{
+    display: flex;
+    justify-content: flex-start;
+  }
+  #all{
+    @import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+    font-family: "Yellowtail";
+    font-style: normal;
+    font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  
+  
+    color: greenyellow;
+  }
+  h3 {
+    @import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+  
+    font-family: "Yellowtail";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  p {
+    @import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+    font-family: "Yellowtail";
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    box-sizing: border-box;
+    width: 183px;
+    height: 50px;
+    margin: auto;
+    padding: 15px 30px;
+    background: #ffffff;
+    border: 1px solid #1b2430;
+  }
+  
+  #first {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+  }
+  
