@@ -57,8 +57,8 @@
             let maggiore = c > d ? c : d;
             console.log("maggiore = "+maggiore);
         } */
-
-        let valori = [3, -1, 4, -2];
+       
+        /* let valori = [3, -1, 4, -2];
         let maggiore = valori[0];
         let minore = valori[0];
         
@@ -73,6 +73,16 @@
     }
     console.log( "minore = "+minore);
     console.log( "maggiore = "+maggiore);
+    */
+
+    let valori = [3, -1, 4, -2];
+    let totale = 0;
+      valori.forEach(el => {
+        totale += el; 
+     });
+
+    let media = totale / valori.length;
+    console.log( "media: "+ media);
 
     </script>
     </body>
