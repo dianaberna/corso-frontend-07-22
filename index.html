@@ -34,5 +34,42 @@
     <ul>
         <li></li>
     </ul>
+    <script>
+        let a = [3,-1,4,-2];
+
+        let minore=a[0];
+        let maggiore=a[0];
+
+        for(let i =0; i<a.length; i++){
+            if(maggiore<=a[i])
+                {maggiore=a[i]}
+            if(minore>=a[i])
+                {minore=a[i]}
+        }
+        console.log("maggiore = " + maggiore);
+        console.log("minore = " + minore);
+        
+/*         if(a <b){
+            maggiore=b;
+        }
+        else if(a <c){
+            maggiore=c;
+        }
+        else if(a <d){
+            maggiore=d;
+        }
+        
+        
+        if(a >b){
+            minore=b;
+        }
+        else if(a >c){
+            minore=c;
+        }
+        else if(a >d) {
+            minore=d;
+        } */
+
+    </script>
 </body>
 </html>
