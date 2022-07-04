@@ -1,110 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 html{
-    font-family: 'Poppins', sans-serif;
-}
-.Welcome_Screen{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-style: "poppins";
-    margin-top: 10%;
-}
-.started__button{
-    padding: 17.5px 57.5px;
-    background-color: #827397;
-    color: #ffffff;
-    border-radius: 8px;
-    margin-top: 5%;
-    border: 0px;
-}
-.title__text{
-    font-weight: 700;
-    font-size: 24px;
-    color: #5F5B5B;
-}
-.paragraph__text{
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    color: #ADA8A8;
-}
-.All__ScreenSelection__Buttons{
-    display: flex;
-}
-#ScreenSelection__Buttons{
-    padding: 5px 15px;
-    background-color: #ffffff;
-    border-radius: 17px;
-}
-#ScreenSelection__Buttons:hover{
-    padding: 5px 15px;
-    background-color: #827397;
-    border-radius: 17px;
-}
-.Gatto_Testo {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
+  font-family: 'Poppins', sans-serif;
 }
 
-
-.Gatto_Prezzo {
-    display: flex;
-    flex-direction: row;
-    margin-left: 20rem;
-    font-size: 2rem;
-    margin-top: -3rem;
-
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
-.boxwrapper {
-    display: flex;
-    margin-top: 2rem;
-  }
+h1{
+  font-weight: 700;
+  font-size: 24px;
+  color: #5F5B5B;
+}
+
+p{
+  font-weight: 400;
+  font-size: 14px;
+  color: #ADA8A8;
+/*   padding: 0rem 2rem; */
+}
+
+button{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* welcome */
+.welcome-screen{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.welcome-screen__group-button button{
+  border: 0px;
+  background-color: #D9D9D9;
+  border-radius: 30px;
+  padding: 0.2rem 1rem;
+}
+
+.welcome-screen__group-button button:hover{
+  background-color: #827397;
+}
+
+.welcome-screen__started-button{
+  padding: 1.2rem 4rem;
+  background-color: #827397;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-top: 5%;
+  border: 0px;
+}
+
+/**/
+
+.cat--name{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cat--price {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+}
+
+.details__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
   
-  .box1 {
-    width: 4rem;
-    height: 4rem;
+  /*.box1, .box2, .box3, .box4  {*/
+  .details__button div{
+    display: flex;
+    width: 5rem;
+    height: 5rem;
     border: 1px solid #F5F5F5;
-    margin: 1rem;
+    margin: 0.5rem;
     border-radius: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
-  .box2 {
-    width: 4rem;
-    height: 4rem;
-    border: 1px solid #F5F5F5;
-    margin: 1rem;
-    border-radius: 1rem;
-  }
-
-  .box3 {
-    width: 4rem;
-    height: 4rem;
-    border: 1px solid #F5F5F5;
-    margin: 1rem;
-    border-radius: 1rem;
-  }
-
-  .box4 {
-    width: 4rem;
-    height: 4rem;
-    border: 1px solid #F5F5F5;
-    margin: 1rem;
-    border-radius: 1rem;
-  }
-
-  .Testo_Grande_Violetto {
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    text-align: center; 
+  .details__button div p:nth-child(1){
     color: #827397;
+    margin-bottom: 0px;
+    white-space: nowrap;
   }
 
-  .Testo_Piccolo_Argento {
-    font-size: small; font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+  .details__button div p:nth-child(2) {
+    font-size: small;
     color:  #B4AEAE;
+    margin-top: 0px;
+    white-space: nowrap;
   }
 
 .avatar__circleMask{
@@ -119,38 +123,46 @@ html{
     border: 1px solid #F1B1D5;
 }
 
-.Testo_Piccolo_Argento2 {
-    font-size: small; font-family: Georgia, 'Times New Roman', Times, serif;
-    color:  #B4AEAE;
-  }
-
-
-  .Testo_Grande_Argento {
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-size: large;
-    color:  #B4AEAE;
-    margin-top: 5rem;
-    
-  }
-
-  .button--mirtillo { 
-    display: flex;
-    justify-content: left;
-    align-content: left;
-    padding: 14px 40px;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 8px;
-    white-space: nowrap;
-    color: #ffffff;
-    background-color: #827397;
-    border: 1px solid #827397;
-    height: 60px;
-    width: 310px;
+.author{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 
-.Icona_Telefono {
+.author__text p{
+  margin: 0;
+}
+
+.author__text > p:nth-child(1) {
+  color:  #B4AEAE;
+}
+
+.author__text > p:nth-child(2){
+  font-size: large;
+  color:  #B4AEAE;
+}
+
+.button--mirtillo { 
+  display: flex;
+  justify-content: center;
+  align-content: left;
+  padding: 14px 40px;
+  width: 90%;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #827397;
+  border: 1px solid #827397;
+}
+
+.icon{
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -160,21 +172,4 @@ html{
   align-content: center;
   align-items: center;
   background-color: #827397;
-  margin-left: 14rem;
-  margin-top: -8rem;
-  
-}
-
-.Icona_Messaggio {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  background-color: #827397;
-  margin-left: 18rem;
-  margin-top: -3rem;
 }
