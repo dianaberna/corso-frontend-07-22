@@ -85,7 +85,7 @@
     console.log( "media: "+ media);
     */
 
-    let a = [1, 2, 3];
+    /* let a = [1, 2, 3];
     let b = [2, 3, 4];
     let totale = 0;
     let c = [];
@@ -93,6 +93,22 @@
         c[i] = a[i] + b[i];
     }
     console.log("array delle somme: \n "+c);
+    */
+
+    const a = [1, 2];
+    const b = [2, 3, 4];
+    let c = [];
+    const maxLength = b.length > a.length ? b.length : a.length;
+    for ( let i = 0; i < maxLength; i++ ) {
+        let primovalore = checkUndefinedAndReturnZero(a[i]);
+        let secondovalore = checkUndefinedAndReturnZero(b[i]);
+        c[i] = primovalore + secondovalore;
+    }
+    console.log("array delle somme: \n "+c);
+
+    function checkUndefinedAndReturnZero(el) {
+        return el === undefined ? 0 : el;
+    }
 
     </script>
     </body>
