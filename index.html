@@ -34,5 +34,57 @@
     <ul>
         <li></li>
     </ul>
+
+    <script>
+        let a = 3;
+        let b = -1;
+        let c = 4;
+        let d = -2;
+        
+        if(a>=b && a>=c && a>=d){
+            console.log("Maggiore = "+a);
+        }else if(a<=b && a<=c && a<=d){
+            console.log("Minore = "+a);
+        }
+
+        if(b>=a && b>=c && b>=d){
+            console.log("Maggiore = "+b);
+        }else if(b<=a && b<=c && b<=d){
+            console.log("Minore = "+b);
+        }
+
+        if(c>=a && c>=b && c>=d){
+            console.log("Maggiore = "+c);
+        }else if(c<=a && c<=b && c<=d){
+            console.log("Minore = "+c);
+        }
+
+        if(d>=a && d>=b && d>=c){
+            console.log("Maggiore = "+d);
+        }else if(d<=a && d<=b && d<=c){
+            console.log("Minore = "+d);
+        }
+
+
+console.log("----------------------------------------");
+
+
+        let arrayy = [-3, -1, -4, -2]
+        let max = arrayy[0];
+        let min = arrayy[0];
+
+        for(i=0; i<arrayy.length; i++){
+            if(arrayy[i] > max){
+                max = arrayy[i]; 
+            }else if(arrayy[i] < min){
+                min = arrayy[i];
+            }
+        }
+
+        console.log("max = "+max);
+        console.log("min = "+min);
+
+
+    </script>
 </body>
 </html>
