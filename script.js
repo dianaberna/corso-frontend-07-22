@@ -96,6 +96,11 @@ const arrayprova = [5, 12, 8, 130, 44];
 const found = arrayprova.find(element => element > 10);
 console.log(found); // expected output: 12
 
+/* filter() crea un nuovo array con tutti gli elementi che superano il test implementato dalla funzione fornita.*/
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter(word => word.length > 6);
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
 
 /* arrow funciton -> modo sintetico di scrivere funzioni 
 E' un modo rapido per dire 
