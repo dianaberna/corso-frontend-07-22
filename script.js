@@ -14,7 +14,7 @@ console.log(typeof b);
 console.log("--- conversione esplicita ---");
 let variabile = '10';
 console.log(typeof variabile);
-console.log("variabile = "+variabile);g
+console.log("variabile = "+variabile);
 let variabileConvertita = parseInt(variabile, 10);
 console.log("variabileConvertita = "+variabileConvertita);
 
