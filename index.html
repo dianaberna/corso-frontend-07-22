@@ -58,6 +58,7 @@
             console.log("maggiore = "+maggiore);
         } */
        
+
         /* let valori = [3, -1, 4, -2];
         let maggiore = valori[0];
         let minore = valori[0];
@@ -75,6 +76,7 @@
     console.log( "maggiore = "+maggiore);
     */
 
+
     /* let valori = [3, -1, 4, -2];
     let totale = 0;
       valori.forEach(el => {
@@ -84,6 +86,7 @@
     let media = totale / valori.length;
     console.log( "media: "+ media);
     */
+
 
     /* let a = [1, 2, 3];
     let b = [2, 3, 4];
@@ -95,7 +98,8 @@
     console.log("array delle somme: \n "+c);
     */
 
-    const a = [1, 2];
+
+    /* const a = [1, 2];
     const b = [2, 3, 4];
     let c = [];
     const maxLength = b.length > a.length ? b.length : a.length;
@@ -108,8 +112,30 @@
 
     function checkUndefinedAndReturnZero(el) {
         return el === undefined ? 0 : el;
-    }
+    } */
 
+
+    function humanToDogYears(humanYears) { 
+    
+    if (humanYears < 0) {
+        console.error("Non è possibile");
+        return;
+    }
+    if (humanYears === 0) {
+        return 0;
+    }
+    if (humanYears === 1) {
+        return 10;
+    }
+    if (humanYears > 1) {
+        let years = humanYears - 2;
+        return (years * 4) + 15;
+    }};
+
+    let dogYears = humanToDogYears();
+    console.log("Anni del cane: "+dogYears);
+    
+    
     </script>
     </body>
 </html>
