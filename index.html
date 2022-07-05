@@ -35,7 +35,76 @@
         <li></li>
     </ul>
     <script>
-        let a = [3,-1,4,-2];
+
+        arr1=[1,2]
+        arr2=[3,4,5]
+        arr3=[]
+        var maggiore
+        if(arr1.length>arr2.length){
+            maggiore=arr1.length;
+        }else{
+            maggiore=arr2.length;
+        }
+        for(let i=0; i<maggiore;i++){
+            if(isNaN(arr1[i])){
+                arr1.push(0)
+            } else if(isNaN(arr2[i])){
+                arr2.push(0)
+            }
+            arr3.push(arr1[i]+arr2[i])
+        }
+        for(let i=0;i<arr3.length;i++){
+            console.log(arr3[i])
+        }
+
+        /* let arr = new Array();
+        let sum=0;
+
+        let firstValue = parseInt(prompt("negative number to exit"));
+
+        if(firstValue>=0){
+            arr.push(firstValue);
+
+            for(let i=0;i<arr.length;i++){
+                console.log(arr[i]);
+                sum = sum + arr[i];
+                let newValue = parseInt(prompt("negative number to exit"));
+
+                if(newValue>=0){
+                    arr.push(newValue)
+                }else{
+                    i=arr.length;
+                }
+            }
+        console.log(sum)
+        console.log(arr.length)
+        console.log(sum/arr.length)
+
+        }else{
+            console.log(":(")
+        } */
+        
+        /* function etàCanina(anniVita){
+            if(anniVita<0){
+                console.log("Piantala di cercare di rompere il programma");
+            } else if(anniVita<=2){
+                etàCane=anniVita*10.5;
+                if (anniVita>=0.3){
+                    console.log(etàCane);
+                } else {console.log(etàCane + "<----- Yyyyy, ma è un patato minuscolo 🥺")}
+            }
+            else {
+                etàCane = 21 + (anniVita-2)*4
+                console.log(etàCane);
+            }
+            
+        }
+        let anniDelCane = prompt("Quanti anni umani ha il cane?")
+        etàCanina(anniDelCane); */
+
+
+        /* 
+        let a = [3,-1,4,-2,5 ,- 18 ,0];
 
         let minore=a[0];
         let maggiore=a[0];
@@ -48,7 +117,7 @@
         }
         console.log("maggiore = " + maggiore);
         console.log("minore = " + minore);
-        
+         */
 /*         if(a <b){
             maggiore=b;
         }
