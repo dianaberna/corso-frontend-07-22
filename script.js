@@ -10,6 +10,14 @@ console.log(typeof a);
 var b='ciao';
 console.log(typeof b);
 
+/*conversione esplicita*/
+console.log("--- conversione esplicita ---");
+let variabile = '10';
+console.log(typeof variabile);
+console.log("variabile = "+variabile);
+let variabileConvertita = parseInt(variabile, 10);
+console.log("variabileConvertita = "+variabileConvertita);
+
 /*let var const*/
 if(true){
     var pluto = 4;
