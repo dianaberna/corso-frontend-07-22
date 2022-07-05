@@ -1,0 +1,35 @@
+.background-movie{
+    display: flex;
+    margin-top: 90px;
+}    
+
+
+body{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+a { 
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+} 
+
+.iconArrow{
+    color: white;
+    transform: rotate(90deg);
+}
+
+.header__nav--right{
+    position: absolute;
+    left: 70%; /*questo e' il massimo*/
+    right: 20%;
+    top: 1%;
+    bottom: 32.95%;
+}
