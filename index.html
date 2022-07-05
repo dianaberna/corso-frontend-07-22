@@ -86,9 +86,12 @@
                     else if (d<a && d<b && d<c) 
                     {console.log(d + " è il numero minore"); }*/
 
-        //Funzione che restituisce la somma di due numeri
         
-        var x = prompt("Inserisci primo addendo")
+        
+        
+         //Funzione che restituisce la somma di due numeri
+        
+        /*var x = prompt("Inserisci primo addendo")
         var y = prompt("Inserisci secondo addendo")
         var a = parseInt(x)
         var b = parseInt(y)
@@ -98,12 +101,57 @@
             return a+b;
         }
 
-        console.log(a+b)
+        console.log(a+b)*/
 
 
+        //Somma numeri da unico numero
+        
+        /*function somma2(a) {
+            let somma = 0;
 
-
+            for (let i = 1; i <= a; i++) {
+                somma += i;
+            }
             
+            return somma;
+            
+        }
+        
+        console.log(somma2(4))
+        console.log(somma2(600))
+        console.log(somma2(30))
+        console.log(somma2(parseInt(prompt("inserisci numero"))))*/
+
+        //Farm problem
+
+        /*function fattoria(polli, mucche, maiali) {
+            let zampepolli = polli*2
+            let zampemucche = mucche*4
+            let zampemaiali = maiali*4
+
+            let totalezampe = zampepolli + zampemucche + zampemaiali
+
+            return totalezampe
+        }
+
+        console.log(fattoria(4,5,6))*/
+
+        //Char count
+
+        function contaLettera(a, b) {
+           let tot = 0;
+           
+            for (let i = 0; i < b.length; i++) {
+                if (b[i] == a){ 
+                    tot++
+                }
+            }
+            return tot;
+        
+        }
+
+        console.log(contaLettera((prompt("inserisci una lettera")), prompt("Inserisci una frase")))
+    
     </script>
 
 
