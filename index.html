@@ -152,19 +152,20 @@
 
         console.log(contaLettera((prompt("inserisci una lettera")), prompt("Inserisci una frase")))*/
 
+      
+
         function timeformilkorcookies (a) {
-            Christmaseve = new Date(24/11/2000)
-            
+            let dayA = a.getDate()
+            let monthA = a.getMonth()
 
-            if (a !== Christmaseve ) {
-                console.log(false)
-            } else { console.log(true)}
-
-            return a;
+            if (dayA == 24 && monthA == 11 ) {
+                return true}
+                else {return false}
 
         }
 
-        console.log(timeformilkorcookies(17/11/2000))
+        let a = new Date(17/11/2000)
+        console.log(timeformilkorcookies(a))
     
     </script>
 
