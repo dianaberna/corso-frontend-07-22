@@ -1,4 +1,3 @@
-
 /* tipi di dato*/
 console.log("--- variabili ---");
 var a;
@@ -12,7 +11,6 @@ console.log(typeof b);
 
 /*
 // esempio scope funzioni 
-
 function primafunzione(p){
     p += 2;
     function secondafunzione(p){
@@ -99,7 +97,6 @@ posizione 0 -> 5
 posizione 1 -> 8
 posizione 2 -> 9
 posizione 3 -> 2
-
 array.length = 4
 */
 
@@ -342,4 +339,3 @@ console.log("json topping: "+  provaJson.topping[2].type)
 for(element of provaJson.topping){
     console.log(element);
 } 
-
