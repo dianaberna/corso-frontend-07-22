@@ -23,7 +23,7 @@ function clickTheButton() {
     } else {
         generatedParagraph.style.color = "orange"; 
         form.style.display = "flex";
-        document.getElementById("lightText").innerHTML = "spegni la luce";
+        document.getElementById("lightText").innerHTML = "💡 spegni la luce 💡";
     }
     isLightTurnedOn = !isLightTurnedOn;
 }
