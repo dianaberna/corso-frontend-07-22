@@ -202,6 +202,60 @@ console.log('-------esercizio funzione che somma due numeri----------')
 
 
 
+
+
+
+        function EtempoDiBiscottieLatte(data){
+
+                let giorno = data.getDate();
+            
+                let mese = data.getMonth();
+
+            if(giorno === 24 && mese === 11){
+        
+                console.log('fettine panate')
+                return true;
+            
+            }
+            else{
+                console.log('pasta e fagioli')
+                return false
+            }
+        }
+
+        console.log(EtempoDiBiscottieLatte(new Date(2021,11,24)))
+
+
+
+
+
+
+
+
+
+let pippo = ([1, 10], [2, 3, 4, 5, 6, 7, 8, 9])
+let pluto =([15,150], [45, 75, 35])  
+let paperino =([[1, 2], [5, 6]], [[3, 4]])  
+
+function accorpa(){
+    arr1 =[1, 10]
+    arr2 =[2, 3, 4, 5, 6, 7, 8, 9]
+    arrSum= [...arr1,...arr2];
+    console.log(arrSum);
+
+
+    arr3 =[15,150];
+    arr4= [45, 75, 35];
+    arrSum2 = [...arr3, ...arr4];
+    console.log(arrSum2);
+}
+
+accorpa();
+
+
+
+
+
     </script>
 </body>
 </html>
