@@ -10,6 +10,21 @@ console.log(typeof a);
 var b='ciao';
 console.log(typeof b);
 
+/*
+// esempio scope funzioni 
+
+function primafunzione(p){
+    p += 2;
+    function secondafunzione(p){
+        let g = p + 2
+        return g
+    }
+    secondafunzione(p)
+    return p
+}
+secondafunzione(2)
+console.log(primafunzione(1)) */
+
 /*conversione esplicita*/
 console.log("--- conversione esplicita ---");
 let variabile = '101';
@@ -163,7 +178,10 @@ console.log(found); // expected output: 12 */
 const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 const result = words.filter(word => word.length > 6);
 console.log(result);
-// expected output: Array ["exuberant", "destruction", "present"]
+
+const numbers = [4, 2, 5, 1, 3];
+numbers.sort((a, b) => a - b);
+console.log(numbers); // [1, 2, 3, 4, 5]
 
 /*funzione*/
 console.log("--- funzione ---");
@@ -223,9 +241,16 @@ console.log(s1,s2,s3)
 /* let sign = prompt();       //  open the blank prompt window
 console.log(typeof sign); */
 
+/*date */
+const today = new Date()
+let birthday = new Date('December 17, 1995 03:24:00') // DISCOURAGED: may not work in all runtimes
+birthday = new Date('1995-12-17T03:24:00')   // This is ISO8601-compliant and will work reliably
+birthday = new Date(1995, 11, 17)            // the month is 0-indexed
+birthday = new Date(1995, 11, 17, 3, 24, 0)
+birthday = new Date(628021800000)            // passing epoch timestamp
 
 /* ... -> spread operator 
-Spalma il contenuto di un array o di un json dentro qualcos altro
+Spalma il contenuto di un array (o di un json) dentro qualcos altro
 Quello che si dovrebbe fare è controllare a mano per ogni elemento
 se esiste già nel nuovo array sostituirlo o aggiungerlo come nuovo
 Con lo spread operator lo fai con una parola
@@ -235,13 +260,86 @@ let x = [2,4,8];
 let y = [4,5,6];
 
 let z = [...x, ...y];
-console.log("x = "+x)
-console.log("y = "+y)
+let z1 = [x,y];
+console.log("x = "+x);
+console.log("y = "+y);
 console.log("z = "+z); 
+console.log("z1 = "+z1); 
+
+console.log("---");
+console.log(x);
+console.log(...x);
+console.log("---");
+
+// numeri
+const arr1 = [10, 5, 1, 7];
+console.log("stampa ----- "+arr1.sort())
+const arr2 = [1, 90, 6, 4];
+const arrres = [...arr1, ...arr2];
+const result1 = [...arrres].sort((a, b) => a - b);
+
+console.log(arrres);
+console.log(result1);
+
+// caratteri
+const arr3 = ['z', 'c', 'a', 'f'];
+console.log("stampa ----- "+arr3.sort())
+const arr4 = ['p', 'q', 'm', 'y'];
+const arrres2 = [...arr3, ...arr4];
+const result2 = [...arrres2].sort();
+console.log(arrres2);
+console.log(result2);
 
 /* map -> crea un nuovo array con gli elementi risultanti dalla chiamata di map*/
 console.log("--- map ---");
 const array1 = [1, 4, 9, 16];
 const map1 = array1.map(x => x * 2);
 console.log(map1);
+
+
+/*notazione oggetti*/
+console.log("--- oggetti ---");
+let utente = { name: 'Mario', cognome: 'Rossi'}
+console.log(utente.name)
+let pietro = { cognome: 'de angelis', birth: '01-01-1900'}
+let alieno = {...utente, ...pietro} 
+console.log(alieno)
+
+var topolino = { name: 'topolino', surname: 'rossi'}
+console.log(topolino.name)
+console.log(topolino['name'])
+
+let provaJson = {
+	"id": "0001",
+	"type": "donut",
+	"name": "Cake",
+	"ppu": 0.55,
+	"batters":
+		{
+			"batter":
+				[
+					{ "id": "1001", "type": "Regular" },
+					{ "id": "1002", "type": "Chocolate" },
+					{ "id": "1003", "type": "Blueberry" },
+					{ "id": "1004", "type": "Devil's Food" }
+				]
+		},
+	"topping":
+		[
+			{ "id": "5001", "type": "None" },
+			{ "id": "5002", "type": "Glazed" },
+			{ "id": "5005", "type": "Sugar" },
+			{ "id": "5007", "type": "Powdered Sugar" },
+			{ "id": "5006", "type": "Chocolate with Sprinkles" },
+			{ "id": "5003", "type": "Chocolate" },
+			{ "id": "5004", "type": "Maple" }
+		]
+}
+
+console.log(provaJson.name)
+console.log("json topping: "+  provaJson.topping[2].type)
+
+for(element of provaJson.topping){
+    console.log(element);
+} 
 

@@ -1,5 +1,7 @@
 console.log("seconda parte")
 
+/* */
+
 // Returns a reference to the element by its ID.
 document.getElementById('someid');
 
@@ -9,12 +11,16 @@ document.getElementsByClassName('someclass');
 // Returns an HTMLCollection of elements with the given tag name.
 document.getElementsByTagName('LI');
 
+/* new */
+
 // Returns the first element within the document that matches the specified group of selectors.
 document.querySelector('.someclass');
 
 // Returns a list of the elements within the document (using depth-first pre-order traversal of the document's nodes)
 // that match the specified group of selectors.
 document.querySelectorAll('div.note, div.alert');
+
+/* */
 
 // Get child nodes
 var stored = document.getElementById('someid');
@@ -45,9 +51,35 @@ firstHeading.appendChild(newHeading);
 firstHeading.appendChild(newParagraph);
 
 // can also insert before like so
-
+ 
 // get parent node of firstHeading
 var parent = firstHeading.parentNode;
 
 // insert newHeading before FirstHeading
 parent.insertBefore(newHeading, firstHeading);
+
+// update style
+stored.style.color = "red";
+
+function dosomething(){
+    console.log("ciao")
+}
+
+let text = document.getElementById("text")
+
+function js_style() {
+    //font styles added by JS:
+    if(text.style.color == "green"){
+        text.style.color = "black";
+        text.style.fontSize = "20px";
+    }else {
+        text.style.fontSize = "10px";
+        text.style.color = "green";
+    }
+}  
+
+let riferimento = document.getElementById("elementoprova");
+let h1 = document.createElement('h1');
+let h1testo = document.createTextNode('Testo di prova');
+h1.appendChild(h1testo)
+riferimento.appendChild(h1)
