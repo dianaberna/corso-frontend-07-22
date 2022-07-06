@@ -12,3 +12,8 @@
 .text {
     color: whitesmoke
 }
+
+#containerForm {
+    display: flex;
+    flex-direction: row;
+}

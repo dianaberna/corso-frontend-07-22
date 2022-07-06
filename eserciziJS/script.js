@@ -9,13 +9,19 @@ containerElement.appendChild(generatedParagraph);
 
 let paragraphElement = document.getElementById("paragraph");
 
-function clickTheButton(clickon){
-    console.log("funziono!");
-    if(generatedParagraph.style.color == "black") {
-        generatedParagraph.style.color = "orange"; 
-    } else {
+let form = document.getElementById("containerForm");
+
+let isLightTurnedOn = false;
+
+function clickTheButton() {
+    if (isLightTurnedOn) {
         generatedParagraph.style.color = "black";
-    } 
+        form.style.display = "none";
+    } else {
+        generatedParagraph.style.color = "orange"; 
+        form.style.display = "flex";
+    }
+    isLightTurnedOn = !isLightTurnedOn;
 }
 
 function clickForm(){
