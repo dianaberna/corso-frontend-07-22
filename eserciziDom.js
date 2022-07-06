@@ -31,9 +31,14 @@ function cambiaStile(){
 }
 
 
-let primo = document.getElementById('nome');
-let secondo = document.getElementById('cognome');
+
+
 
 function submitto(){
-    console.log(primo.value + secondo.value);
+    let nome = document.getElementById('nome').value;
+    let cognome = document.getElementById('cognome').value;
+    console.log(nome)
+    console.log(cognome)
+
+    document.getElementById('risultato').innerHTML = nome + " " + cognome;
 }
