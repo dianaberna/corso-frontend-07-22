@@ -260,9 +260,11 @@ let x = [2,4,8];
 let y = [4,5,6];
 
 let z = [...x, ...y];
+let z1 = [x,y];
 console.log("x = "+x);
 console.log("y = "+y);
 console.log("z = "+z); 
+console.log("z1 = "+z1); 
 
 console.log("---");
 console.log(x);
@@ -271,14 +273,17 @@ console.log("---");
 
 // numeri
 const arr1 = [10, 5, 1, 7];
+console.log("stampa ----- "+arr1.sort())
 const arr2 = [1, 90, 6, 4];
 const arrres = [...arr1, ...arr2];
 const result1 = [...arrres].sort((a, b) => a - b);
+
 console.log(arrres);
 console.log(result1);
 
 // caratteri
 const arr3 = ['z', 'c', 'a', 'f'];
+console.log("stampa ----- "+arr3.sort())
 const arr4 = ['p', 'q', 'm', 'y'];
 const arrres2 = [...arr3, ...arr4];
 const result2 = [...arrres2].sort();
@@ -290,6 +295,7 @@ console.log("--- map ---");
 const array1 = [1, 4, 9, 16];
 const map1 = array1.map(x => x * 2);
 console.log(map1);
+
 
 /*notazione oggetti*/
 console.log("--- oggetti ---");

@@ -51,7 +51,7 @@ firstHeading.appendChild(newHeading);
 firstHeading.appendChild(newParagraph);
 
 // can also insert before like so
-
+ 
 // get parent node of firstHeading
 var parent = firstHeading.parentNode;
 
@@ -61,14 +61,25 @@ parent.insertBefore(newHeading, firstHeading);
 // update style
 stored.style.color = "red";
 
-
 function dosomething(){
     console.log("ciao")
 }
 
+let text = document.getElementById("text")
+
 function js_style() {
     //font styles added by JS:
-    text.style.fontSize = "14pt";
-    text.style.fontFamily = "Comic Sans MS";
-    text.style.color = "green";
-}
+    if(text.style.color == "green"){
+        text.style.color = "black";
+        text.style.fontSize = "20px";
+    }else {
+        text.style.fontSize = "10px";
+        text.style.color = "green";
+    }
+}  
+
+let riferimento = document.getElementById("elementoprova");
+let h1 = document.createElement('h1');
+let h1testo = document.createTextNode('Testo di prova');
+h1.appendChild(h1testo)
+riferimento.appendChild(h1)
