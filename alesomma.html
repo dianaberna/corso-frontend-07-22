@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>titolo</h1>
+
+
+    <script>
+/*         function contaGambeNO_VEGGHIE(pollo, mucca, maiale){
+            var polloTot = pollo * 2;
+            var muccaTot = mucca * 4;
+            var maialeTot = maiale * 4;
+            var tot = polloTot + (muccaTot + maialeTot);
+
+            console.log("Sono " +pollo+ " polli, " +mucca+ " mucche e " +maiale+ " maiali");
+
+            console.log("Il totale delle gambe sono: " +tot);
+        }
+
+        console.log(contaGambeNO_VEGGHIE(2,3,4));  */
+
+         function verificaParola(lettera, frase){
+            if ( frase.indexOf(lettera) > -1 ) { 
+                alert( "Ho trovato la lettera [" +lettera+ "] dentro la frase --> " +frase); 
+            } else { alert("Lettera non trovata!") }
+        } 
+            function contaLettere(lettera, frase){
+                var conta = 0;
+                for(i=0; i<frase.length; i++){
+                    if(frase.charAt(i) === lettera) {
+                        conta++;
+                    }
+                }
+                alert("Nella frase [" +frase+ "] ho trovato " +conta+ " volte questo carattere. [" +lettera+ "]");
+            }
+        
+        console.log(verificaParola("a", "CiAo sono vegano"));
+        console.log(contaLettere("a", "CiAo sono vegano"));
+
+    </script> 
+</body>
+</html>
+
