@@ -1,0 +1,9 @@
+.button {
+    max-width: 5rem;
+    align-self: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
