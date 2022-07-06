@@ -9,10 +9,26 @@
 </head>
 <body>
     <div id="container">
-        <h1 style="color: whitesmoke;" >Cripta del vampiro</h1>
+        <h1 class="text">Cripta del vampiro</h1>
         <button onclick="clickTheButton()" class="button">
             accendi la luce
         </button>
+    </div>
+    <form class="form">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+
+        <label for="cognome">Cognome:</label><br>
+        <input type="text" id="cognome" name="cognome">
+
+        <button onclick="clickForm()" type="button">
+            clicca
+            </button>
+    </form>
+    <div>
+        <p id="paragraph">
+            Ciao
+        </p>
     </div>
     <script src="script.js">
     </script>
