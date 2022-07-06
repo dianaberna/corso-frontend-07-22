@@ -11,15 +11,19 @@ let paragraphElement = document.getElementById("paragraph");
 
 let form = document.getElementById("containerForm");
 
+let buttonText = document.getElementById("lightText");
+
 let isLightTurnedOn = false;
 
 function clickTheButton() {
     if (isLightTurnedOn) {
         generatedParagraph.style.color = "black";
         form.style.display = "none";
+        document.getElementById("lightText").innerHTML = "accendi la luce";
     } else {
         generatedParagraph.style.color = "orange"; 
         form.style.display = "flex";
+        document.getElementById("lightText").innerHTML = "spegni la luce";
     }
     isLightTurnedOn = !isLightTurnedOn;
 }
