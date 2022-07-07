@@ -47,12 +47,14 @@
         let testo = document.getElementById("testo");
         let bottone = document.getElementById("bottone");
 
-        testo.onkeyup = Event => {
+        testo.onkeydown = ( Event => {
             if (Event.key === "Enter") {
+                console.log(Event.key);
                 bottone.click();
                 }
             }
 
+        )
 
     </script>
 
