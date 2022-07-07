@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -7,13 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esercizio DOM</title>
 </head>
+
 <body>
+    
     <div id="container">
         <h1 class="text"> 🧛 Cripta del vampiro 🧛 </h1>
         <button onclick="clickTheButton()" class="button" id="lightText">
             Accendi la luce
         </button>
     </div>
+    
     <div id="containerForm" style="display: none;">
     <form class="form" id="form">
         <h1>
@@ -34,9 +38,17 @@
             <p id="paragraph">
             </p>
     </form>
-    <img src="https://i.pinimg.com/564x/38/d2/70/38d270c86900e79c161951eadc8b71e9.jpg" alt style="margin: auto">
+    <img src="https://i.pinimg.com/564x/38/d2/70/38d270c86900e79c161951eadc8b71e9.jpg" alt style="margin: 4rem 0 0 25rem">
     </div>
+    
     <script src="script.js">
     </script>
+    
+    <div class="listContainer">
+        <h1>LISTA DELLA SPESA</h1>
+        <input type="text" name="listElement" id="listElement">
+        <button type="button" onclick="addList()">Aggiungi</button>
+        <ul id="list"></ul> 
+    </div>
 </body>
 </html>
