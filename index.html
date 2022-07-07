@@ -4,24 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
     <title>Corso Frontend</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
-        html{
-            font-family: 'Poppins', sans-serif;
-            padding: 1rem;
-        }
-        ul{
-            list-style: decimal;
-        }
-        li{
-            width: 10rem;
-            height: 2rem;
-        }
-    </style>
 </head>
 <body>
-    <h1>Esercizi Corso Frontend</h1>
+    <!-- <h1>Esercizi Corso Frontend</h1>
     <h2>HTML/CSS</h2>
     <ul>
         <li><a href="./landing_page/index.html">Landing page</a></li>
@@ -34,5 +21,56 @@
     <ul>
         <li></li>
     </ul>
+
+    <div id="box">
+        <button id="bottone" onclick="funzione()">Cliccami</button>
+    </div>
+
+
+    <form method="get">
+        <label for="">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <label for="">Cognome</label>
+        <input type="text" name="cognome" id="cognome">
+        <button type="button" onclick="invio()">Invio</button>
+    </form>
+    <div>
+        <h1>risultati</h1>
+        <p id="risultati">
+            
+        </p>
+    </div> -->
+    <div class="todolist">
+        <input type="text" name="elemento" id="elemento" placeholder="Inserire l'elemento...">
+        <button type="button" onclick="add()">Add</button>
+    </div>
+    <ul id="lista"></ul>
+
+
+
+
+
+
+
+
 </body>
+<script src="javascript.js"></script>
 </html>
+
+
+<!-- 1- creare un div e un bottone al suo interno nell'html, assegnare un id al div, selezionare l'id nel javascript (getelementbyid) e modificare lo stile 
+2- creare un paragrafo da appendere al div (sarà inserito dopo il bottone)
+3- andiamo a gestire l'evento onclick del button scrivendo onclick="" come attributo del tag e inserire un console.log("ciao") all'interno (fare questa cosa nell'html)
+4- creare una funzione con all'interno un console log e nell'evento onclick richiamere questa funzione
+5- nella funzione creata andare a modificare lo stile del paragrafo che abbiamo nello stesso div
+(ad esempio fontSize = "20px", color = "red")
+6- aggiungere l'if alla funzione per controllare se il bottone è già stato cliccato controllando appunto se lo stile applicato è quello dato dal css del documento oppure quello aggiornato con js
+ -->
+
+
+
+  <!--   
+    1- creare un form con due caselle di tipo testo ("nome" e "cognome")
+    2- aggiungere un input di tipo submit e scrivere una funzione che gestisce l'evento onSubmit stampando in console un "ciao"
+    3- aggiornare la funzione creata andando a stampare in console ogni valore inserito nel form (elemento.value è per selezionare il contenuto dell'elemento)
+    -->
