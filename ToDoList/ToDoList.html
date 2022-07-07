@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+</head>
+<body>
+    <div>
+        <h1>TO DO LIST</h1>
+        <input type = text name="testo" id = "testo">
+        <button type="button" id = "bottone" onclick="aggiungi()">Aggiungi alla lista</button>
+        <ul id="lista"></ul>
+    </div>
+
+
+    <script>
+        function aggiungi() {
+            let lista = document.getElementById("lista");
+            let testo = document.getElementById("testo").value;
+
+            console.log(testo)
+
+            let idLista = document.getElementsByTagName("li").length;
+            let elemento = document.createElement("li");
+            elemento.id = idLista;
+            elemento.innerHTML = testo;
+
+            let bottoneElimina = document.createElement("button")
+            let bottoneEliminaTesto = document.createTextNode("Elimina")
+            bottoneElimina.appendChild(bottoneEliminaTesto)
+            elemento.appendChild(bottoneElimina)
+            lista.appendChild(elemento)
+
+            bottoneElimina.onclick = function () {
+                return EliminaElemento(idLista);
+            }
+        }
+
+        function EliminaElemento(idLista) {
+            
+            let x = document.getElementById(idLista);
+            x.parentNode.removeChild(x);
+        }
+        
+        let testo = document.getElementById("testo");
+        let bottone = document.getElementById("bottone");
+
+        testo.onkeyup = Event => {
+            if (Event.key === "Enter") {
+                bottone.click();
+                }
+            }
+
+
+    </script>
+
+
+
+
+</body>
+</html>
