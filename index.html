@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,27 @@
     <title>Corso Frontend</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
-        html{
+
+        html {
             font-family: 'Poppins', sans-serif;
             padding: 1rem;
         }
-        ul{
+
+        ul {
             list-style: decimal;
         }
-        li{
+
+        li {
             width: 10rem;
             height: 2rem;
         }
-        #id{
+
+        #id {
             font-size: 20px;
         }
     </style>
 </head>
+
 <body>
     <h1>Esercizi Corso Frontend</h1>
     <h2>HTML/CSS</h2>
@@ -45,19 +51,29 @@
         <div class="note"></div>
         <div class="alert"></div>
         <p id="firstHeading"></p>
-        <p id="text">paragrago</p> 
+        <p id="text">paragrago</p>
         <a href="#" onclick="dosomething();">A link</a>
         <button id="jsstyle" onclick="js_style()">Style</button>
 
         <div id="elementoprova">
 
         </div>
+        <div id="elemcognome">
+
+        </div>
     </div>
-    <scritp>
+    <form name="mioform">
+        <input type="text" name="nome" id="nome">
+        <button type="button" onclick="valida()">prova</button>
+    </form>
+    <p id="risultato"></p>
+    <script src="./scriptTODOLIST.js"></script>
+    <!-- 
+        <script src="./script.js"></script>
+        <script src="./scriptDOM.js"></script> 
+    -->
 
 
-    </scritp>
-    <!-- <script src="./script.js"></script> -->
-    <script src="./scriptDOM.js"></script>
 </body>
+
 </html>
