@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toddolist</title>
+</head>
+
+<body>
+  <div>
+    <h1>TO DO LIST</h1>
+    <input type="text" name="elemento" id="elemento">
+    <button type="button" onclick="aggiungi()">Aggiungi</button>
+    <ul id="lista"></ul>
+  </div>
+
+
+
+
+
+  <!-- <script src="./script_esercizio_todolist.js"> -->
+  <script>
+    function aggiungi() {
+      let lista = document.getElementById("lista");
+      let elemento = document.getElementById("elemento").value;
+      console.log(elemento);
+      let indice = document.getElementsByTagName("li").length + 1;
+      let nuovoElemento = document.createElement("li");
+      nuovoElemento.id = indice;
+      nuovoElemento.innerHTML = elemento;
+      //let nuovoNodoTesto = document.createTextNode(elemento);
+      let bottoneElimina = document.createElement("button");
+      bottoneElimina.innerHTML = "elimina";
+      bottoneElimina.type = "button";
+      bottoneElimina.name = "elimina";
+      bottoneElimina.onclick = function () {
+        return elimina(indice);
+      };
+
+      //nuovoElemento.appendChild(nuovoNodoTesto)
+      nuovoElemento.appendChild(bottoneElimina)
+      lista.appendChild(nuovoElemento)
+    }
+    function elimina(elemento) {
+      let rimuovere = document.getElementById(elemento);
+      // nodeToRemove.parentNode.removeChild
+      rimuovere.parentNode.removeChild(rimuovere)
+      return;
+    }
+
+  </script>
+</body>
+
+</html>
