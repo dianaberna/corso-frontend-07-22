@@ -333,7 +333,7 @@ let provaJson = {
 		]
 }
 
-console.log(provaJson.name)
+            console.log(provaJson.name)
 console.log("json topping: "+  provaJson.topping[2].type)
 
 for(element of provaJson.topping){
