@@ -1,3 +1,4 @@
+
 /* tipi di dato*/
 console.log("--- variabili ---");
 var a;
@@ -11,6 +12,7 @@ console.log(typeof b);
 
 /*
 // esempio scope funzioni 
+
 function primafunzione(p){
     p += 2;
     function secondafunzione(p){
@@ -97,6 +99,7 @@ posizione 0 -> 5
 posizione 1 -> 8
 posizione 2 -> 9
 posizione 3 -> 2
+
 array.length = 4
 */
 
@@ -333,9 +336,77 @@ let provaJson = {
 		]
 }
 
-            console.log(provaJson.name)
+console.log(provaJson.name)
 console.log("json topping: "+  provaJson.topping[2].type)
 
 for(element of provaJson.topping){
     console.log(element);
 } 
+
+/* clousure -- è una caratteristiche che una funzione può avere o meno.
+in pratica quando in una funzione viene definita una funzione che utilizza variabili
+dichiarate nel padre, la funzione padre non smetterà mai di esistere dato che contiene
+questa funzione figlio  */
+
+const bancaScarsa = () => {
+    let fondi = 50;
+    fondi += 100;
+    console.log(`Banca Scarsa - Saldo ${fondi}`);
+    return fondi;
+}
+
+bancaScarsa();
+bancaScarsa();
+bancaScarsa();
+
+const banca = () => {
+    /*
+     * La funzione padre non può esser 
+     * distrutta perché ritorna una
+     * funzione interna sempre pronta
+     * all'esecuzione. Quindi fondi
+     * preserva il suo saldo ad ogni
+     * deposito successivo
+     *
+     */
+
+    let fondi = 50;
+    return function depositaFondi() {
+        fondi += 100;
+        console.log(`Banca - Saldo ${fondi}`);
+        return fondi;
+    }
+}
+
+let vadoInBanca = banca();
+
+vadoInBanca();
+vadoInBanca();
+vadoInBanca();
+
+
+/* altre funzioni per manipolare array e stringhe */ 
+myDaysString = 'Sunday;Monday;Tuesday;Wednesday';
+myDaysArray = myDaysString.split(';');
+console.log(myDaysArray)
+console.log(...myDaysArray)
+console.log(myDaysArray[0]); //output is the first item in the array i.e. Sunday 
+console.log(myDaysArray[myDaysArray.length - 1]); //output is the last //item in the array i.e. Wednesday
+myDaysString = myDaysArray.join(',');
+console.log(myDaysString); //output is joined string i.e.//Sunday,Monday,Tuesday,Wednesday
+const person = {
+    nome: {
+        primo: 'Bob',
+        ultimo: 'Smith'
+    }
+};
+console.log(person.nome.primo)
+console.log(person['nome']['primo'])
+
+
+/* symbol - è un tipo di dato che garantisce l'unicità (utilizzato come chiave degli oggetti)
+*/
+const id1 = Symbol('foo');
+const id2 = Symbol('foo');
+console.log("--- symbol ---")
+console.log(id1 == id2)

@@ -69,6 +69,7 @@ let text = document.getElementById("text")
 
 function js_style() {
     //font styles added by JS:
+    
     if(text.style.color == "green"){
         text.style.color = "black";
         text.style.fontSize = "20px";
@@ -83,3 +84,4 @@ let h1 = document.createElement('h1');
 let h1testo = document.createTextNode('Testo di prova');
 h1.appendChild(h1testo)
 riferimento.appendChild(h1)
+
