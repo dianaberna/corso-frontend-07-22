@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to do list</title>
+    <style>
+        #diana p:first-child{
+            color: blue;
+        }
+        div#diana2 > div > p:nth-child(1){
+            color: yellow;
+        }
+        div#diana22 > p{
+            color: red;
+        }
+    </style>
+    
 </head>
 <body>
-    <div>
+    <div id="diana">
+        <p>prova</p>
+        <button type="button">prova</button>
+        <p>prova</p>
+        <p>prova</p>
+    </div>
+    <br/>
+    <div id="diana2">
+      <div>
+        <p>This text is selected!</p>
+        <p>This text isn't selected.</p>
+      </div>
+      
+      <div id="diana22">
+        <p>This text isn't selected.</p>
+        <p>This text isn't selected.</p>
+        <p>This text isn't selected.</p>
+      </div>
+    </div>
+    <br/>
         <h1>TO DO LIST</h1>
         <input type="text" name="elemento" id="elemento">
         <button type="button" onclick="aggiungi()">Aggiungi</button>
@@ -18,18 +49,21 @@
         function aggiungi(){
             let lista = document.getElementById("lista");
             let elemento = document.getElementById("elemento").value;
-            console.log(elemento)
-            let indice = document.getElementsByTagName("li").length + 1;
+            console.log(elemento);
+            
+            let id = document.getElementsByTagName("li").length;
             let nuovoElemento = document.createElement("li");
-            nuovoElemento.id=indice;
+            nuovoElemento.id=id;
             nuovoElemento.innerHTML = elemento;
             //let nuovoNodoTesto = document.createTextNode(elemento);
             let bottoneElimina = document.createElement("button");
             bottoneElimina.innerHTML = "elimina";
             bottoneElimina.type = "button";
-            bottoneElimina.name = "elimina";
+            /* bottoneElimina.id = id; */
+            bottoneElimina.style.backgroundColor = "red";
             bottoneElimina.onclick = function () {
-                return elimina(indice);
+                /* console.log("ciao") */
+                return elimina(id);
             };
 
             //nuovoElemento.appendChild(nuovoNodoTesto)
@@ -42,7 +76,24 @@
             rimuovere.parentNode.removeChild(rimuovere)
             return;
         }
-        
     </script>
+
+<ul id="list">
+  <li>First  (1)</li>
+  <li>Second (2)</li>
+  <li>Third  (3)</li>
+</ul>
+
+<script>
+let list = document.getElementById('list');
+console.log(list)
+
+let items = document.querySelectorAll("li");
+console.log(items[items.length-1]);
+
+console.log(list.lastChild);
+
+console.log(list.lastElementChild);
+</script>
 </body>
 </html>

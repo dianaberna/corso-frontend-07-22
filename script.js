@@ -26,6 +26,7 @@ secondafunzione(2)
 console.log(primafunzione(1)) */
 
 /*conversione esplicita*/
+
 console.log("--- conversione esplicita ---");
 let variabile = '101';
 console.log("prova operazione "+variabile+30)

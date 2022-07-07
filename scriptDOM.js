@@ -9,16 +9,16 @@ document.getElementById('someid');
 document.getElementsByClassName('someclass');
 
 // Returns an HTMLCollection of elements with the given tag name.
-document.getElementsByTagName('LI');
+document.getElementsByTagName('li');
 
 /* new */
 
 // Returns the first element within the document that matches the specified group of selectors.
-document.querySelector('.someclass');
+document.querySelector('#someclass > p');
 
 // Returns a list of the elements within the document (using depth-first pre-order traversal of the document's nodes)
 // that match the specified group of selectors.
-document.querySelectorAll('div.note, div.alert');
+document.querySelectorAll('.note, div .alert');
 
 /* */
 
@@ -69,7 +69,7 @@ let text = document.getElementById("text")
 
 function js_style() {
     //font styles added by JS:
-    
+
     if(text.style.color == "green"){
         text.style.color = "black";
         text.style.fontSize = "20px";
@@ -79,9 +79,11 @@ function js_style() {
     }
 }  
 
-let riferimento = document.getElementById("elementoprova");
+let div = document.getElementById("elementoprova");
 let h1 = document.createElement('h1');
+console.log(typeof h1);
+h1.style.color = "red";
 let h1testo = document.createTextNode('Testo di prova');
-h1.appendChild(h1testo)
-riferimento.appendChild(h1)
+h1.appendChild(h1testo);
+div.appendChild(h1);
 
