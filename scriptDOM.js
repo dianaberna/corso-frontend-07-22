@@ -66,7 +66,7 @@ function dosomething(){
 }
 
 let text = document.getElementById("text")
-
+/*
 function js_style() {
     //font styles added by JS:
 
@@ -77,7 +77,7 @@ function js_style() {
         text.style.fontSize = "10px";
         text.style.color = "green";
     }
-}  
+}  */
 
 let div = document.getElementById("elementoprova");
 let h1 = document.createElement('h1');
@@ -87,3 +87,17 @@ let h1testo = document.createTextNode('Testo di prova');
 h1.appendChild(h1testo);
 div.appendChild(h1);
 
+let textarea = document.getElementById('test-target'),
+consoleLog = document.getElementById('console-log'),
+btnReset = document.getElementById('btn-reset');
+
+function logMessage(message) {
+  consoleLog.innerHTML += message + "<br>";
+}
+
+textarea.addEventListener('keydown', (e) => {
+  if (!e.repeat)
+    logMessage(`Key "${e.key}" pressed [event: keydown]`);
+  else
+    logMessage(`Key "${e.key}" repeating [event: keydown]`);
+});
