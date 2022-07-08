@@ -6,9 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipolazione DOM</title>
+    <style>
+        .rosso {
+            background-color: red;
+            color: white;
+        }
+
+        .verde {
+            background-color: green;
+            color: white;
+        }
+
+        .viola {
+            background-color: purple;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
+    <div>
+        <div id="unqualsiasiid">
+            <p class="verde">paragrafo</p>
+        </div>
+        <div>
+            <div class="unaqualsiasiclasse rosso">div1</div>
+            <div class="unaqualsiasiclasse verde">div2</div>
+        </div>
+        <h2>Sono un titolo 2!</h2>
+        <h3>Sono un titolo 3!</h3>
+        <h4>Sono un titolo 4!</h4>
+        <h5>Sono un titolo 5!</h5>
+    </div>
+    <div>
+        <a href="#" onclick="stampaCiao();">Cliccami e leggi nella console!</a>
+        <p id="text">Io sono un paragrago!!</p>
+        <button id="jsstyle" onclick="cambiaColore()">Style</button>
+    </div>
+
     <script>
         // Metodi per selezionare i nodi presenti nel DOM 
         // ritorna la referenza all'elemento con l'id che gli passiamo tra virgolette
@@ -23,87 +58,68 @@
         // metodi equivalente di selezionare gli elementi dove ci muoviamo come nel css 
 
         // ritorna il primo elemento presente nel documento che corrisponde al css 
-        document.querySelector("#someclass > p");
+        document.querySelector(".unaqualsiasiclasse > p");
 
         // ritorna la lista di elementi selezionati come nel metodo precedente 
         // (ma ne possiamo avere più di uno visto che stiamo utilizzando la virgola come separatore)
-        document.querySelectorAll(".note, div .alert");
+        document.querySelectorAll("div .rosso, p .verde");
 
         // possiamo posizionarci in un 
-        // Ritorna la lista di tutti i nodi figlio
+        // ritorna la lista di tutti i nodi figlio
         var padre = document.getElementById("unqualsiasiid");
         var figlio = padre.childNodes;
 
         // Ritorna il nodo padre
-        var parental = children.parentNode;
+        var parental = figlio.parentNode;
 
-        // create new elments
-        var newHeading = document.createElement("h1");
+        // funzioni per la creazione e aggiunta di nuovi nodi nel dom
 
-        // create text nodes for new elements
-        var h1Text = document.createTextNode("This is a nice header text!");
+        // crea un nuovo Element
+        var nuovoH1 = document.createElement("h1");
 
-        // attach new text nodes to new elements
-        newParagraph.appendChild(pText);
+        // crea un TextNode per l'elemento precedente
+        var testoH1 = document.createTextNode("Io sono un titolo 1!");
 
-        // elements are now created and ready to be added to the DOM.
+        // appende il TextNode all'Element
+        nuovoH1.appendChild(testoH1);
 
-        // grab element on page you want to add stuff to
-        var firstHeading = document.getElementById("firstHeading");
+        // l'elemento è stato creato ma non è ancora aggiunto al dom della pagina web
 
-        // add both new elements to the page as children to the element we stored in firstHeading.
-        firstHeading.appendChild(newHeading);
-        firstHeading.appendChild(newParagraph);
+        let div = document.getElementById("unqualsiasiid");
+        div.appendChild(nuovoH1)
 
-        // can also insert before like so
+        // css e js
+        // aggiunge proprietà css 
+        let titolo2 = document.getElementsByTagName('h2')[0];
+        titolo2.style.color = "red";
+        // aggiunge del css inline 
+        let titolo3 = document.getElementsByTagName('h3')[0];
+        titolo3.style.cssText = "color:blue; border: 2px solid pink;";
+        // aggiunge una classe css
+        let titolo4 = document.getElementsByTagName('h4')[0];
+        titolo4.className = "rosso";
+        // aggiunge/rimuove una classe anche in base ad una condizione
+        let i = 5;
+        let titolo5 = document.getElementsByTagName('h5')[0];
+        titolo5.classList.toggle("viola", i < 10);
 
-        // get parent node of firstHeading
-        var parent = firstHeading.parentNode;
-
-        // insert newHeading before FirstHeading
-        parent.insertBefore(newHeading, firstHeading);
-
-        // update style
-        stored.style.color = "red";
-
-        function dosomething() {
+        // funzione che si attiva al click del tag a
+        function stampaCiao() {
             console.log("ciao");
         }
 
+        // funzione che si attiva al click del button
         let text = document.getElementById("text");
-        /*
-        function js_style() {
-            //font styles added by JS:
 
-            if(text.style.color == "green"){
+        function cambiaColore() {
+            if (text.style.color == "green") {
                 text.style.color = "black";
-                text.style.fontSize = "20px";
-            }else {
-                text.style.fontSize = "10px";
+                text.style.fontSize = "1rem";
+            } else {
+                text.style.fontSize = "2rem";
                 text.style.color = "green";
             }
-        }  */
-
-        let div = document.getElementById("elementoprova");
-        let h1 = document.createElement("h1");
-        console.log(typeof h1);
-        h1.style.color = "red";
-        let h1testo = document.createTextNode("Testo di prova");
-        h1.appendChild(h1testo);
-        div.appendChild(h1);
-
-        let textarea = document.getElementById("test-target"),
-            consoleLog = document.getElementById("console-log"),
-            btnReset = document.getElementById("btn-reset");
-
-        function logMessage(message) {
-            consoleLog.innerHTML += message + "<br>";
         }
-
-        textarea.addEventListener("keydown", (e) => {
-            if (!e.repeat) logMessage(`Key "${e.key}" pressed [event: keydown]`);
-            else logMessage(`Key "${e.key}" repeating [event: keydown]`);
-        });
     </script>
 </body>
 

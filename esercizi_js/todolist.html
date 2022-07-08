@@ -1,81 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to do list</title>
-    <style>
-        #diana p:first-child{
-            color: blue;
-        }
-        div#diana2 > div > p:nth-child(1){
-            color: yellow;
-        }
-        div#diana22 > p{
-            color: red;
-        }
-    </style>
-    
+    <title>To-Do-List</title>
 </head>
+
 <body>
-    <div id="diana">
-        <p>prova</p>
-        <button type="button">prova</button>
-        <p>prova</p>
-        <p>prova</p>
-    </div>
-    <br/>
-    <div id="diana2">
-      <div>
-        <p>This text is selected!</p>
-        <p>This text isn't selected.</p>
-      </div>
-      
-      <div id="diana22">
-        <p>This text isn't selected.</p>
-        <p>This text isn't selected.</p>
-        <p>This text isn't selected.</p>
-      </div>
-    </div>
-    <br/>
-        <h1>TO DO LIST</h1>
-        <input type="text" name="elemento" id="elemento">
-        <button type="button" onclick="aggiungi()">Aggiungi</button>
-        <ul id="lista"></ul>
-    </div>
+
+    <h1>TO DO LIST</h1>
+    <input type="text" name="elemento" id="elemento">
+    <button type="button" onclick="aggiungi()">Aggiungi</button>
+    <ul id="lista"></ul>
 
     <script>
-        function aggiungi(){
+        function aggiungi() {
             let lista = document.getElementById("lista");
             let elemento = document.getElementById("elemento").value;
+
             console.log(elemento);
-            
+
             let id = document.getElementsByTagName("li").length;
             let nuovoElemento = document.createElement("li");
-            nuovoElemento.id=id;
+            nuovoElemento.id = id;
             nuovoElemento.innerHTML = elemento;
-            //let nuovoNodoTesto = document.createTextNode(elemento);
+
             let bottoneElimina = document.createElement("button");
             bottoneElimina.innerHTML = "elimina";
             bottoneElimina.type = "button";
-            /* bottoneElimina.id = id; */
-            bottoneElimina.style.backgroundColor = "red";
+            bottoneElimina.style.cssText = "background-color:white; border:1px solid black;margin-left:10px;";
             bottoneElimina.onclick = function () {
-                /* console.log("ciao") */
                 return elimina(id);
             };
 
-            //nuovoElemento.appendChild(nuovoNodoTesto)
             nuovoElemento.appendChild(bottoneElimina)
             lista.appendChild(nuovoElemento)
         }
-        function elimina(elemento){
+
+        function elimina(elemento) {
             let rimuovere = document.getElementById(elemento);
-            // nodeToRemove.parentNode.removeChild
             rimuovere.parentNode.removeChild(rimuovere)
             return;
         }
     </script>
 </body>
+
 </html>

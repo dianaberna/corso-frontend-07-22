@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eserciziio Unsplash API</title>
+    <title>Esercizio Unsplash API</title>
     <style>
         .grid {
             width: 100%;
@@ -37,7 +37,7 @@
 
         function loadImg() {
             const grid = document.getElementsByClassName('grid')[0]
-            let ricerca = 'cat and dog'
+            let ricerca = 'dog'
             let id_diana = 'hZRa4OdzodVlybtiMsr_HYdkAK3jMQ26SKTKiUM44QE'
             const url = `https://api.unsplash.com/search/photos/?query=${ricerca}&per_page=10&client_id=${id_diana}`
             fetch(url)

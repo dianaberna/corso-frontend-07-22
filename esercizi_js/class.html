@@ -14,29 +14,29 @@
             oggetto -> instanza di una classe che possiede le sue proprietà e metodi 
         */
         class Persona {
-        // proprietà
-        name = "";
-        surname = "";
+            // proprietà
+            name = "";
+            surname = "";
 
-        constructor({ name, surname }) {
-            // this -> mi serve per accedere alle proprietà della classe
-            // name e surname sono fuori da questa funzione ma ci accedere tramite this
-            this.name = name;
-            this.surname = surname;
-        }
+            constructor({ name, surname }) {
+                // this -> mi serve per accedere alle proprietà della classe
+                // name e surname sono fuori da questa funzione ma ci accedere tramite this
+                this.name = name;
+                this.surname = surname;
+            }
 
-        // metodi
-        getName() {
-            return this.name;
-        }
+            // metodi
+            getName() {
+                return this.name;
+            }
 
-        getSurname() {
-            return this.surname;
-        }
+            getSurname() {
+                return this.surname;
+            }
 
-        getFullName() {
-            return this.name + " " + this.surname;
-        }
+            getFullName() {
+                return this.name + " " + this.surname;
+            }
         }
 
         let persona1 = new Persona({
@@ -49,7 +49,7 @@
         surname: "Rossi",
         });
 
-        console.log(persona1.getFullName());
+        console.log(persona2.getFullName());
     </script>
 </body>
 </html>
