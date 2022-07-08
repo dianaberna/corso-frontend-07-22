@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tica-tac-toe-style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+
+    <div id="padre">
+        <input  type="text" name="elemento" id="player_1" placeholder="giocatore 1">
+        <input type="text" name="elemento" id="player_2" placeholder="giocatore 2">
+
+        <button  class="" type="button" onclick="assegnaTurno()">Clicca qui</button>
+        <p id="turno"></p>
+        </div>
+
+
+
+    <div class="parent">
+        <div class="div0 pos" onclick="giocare(0,0)"> </div>
+        <div class="div1 pos" onclick="giocare(0,1)"> </div>
+        <div class="div2 pos"onclick="giocare(0,2)"> </div>
+        <div class="div3 pos"onclick="giocare(1,0)"> </div>
+        <div class="div4 pos"onclick="giocare(1,1)"> </div>
+        <div class="div5 pos"onclick="giocare(1,2)"> </div>
+        <div class="div6 pos"onclick="giocare(2,0)"> </div>
+        <div class="div7 pos"onclick="giocare(2,1)"> </div>
+        <div class="div8 pos"onclick="giocare(2,2)"> </div>
+        </div>
+    <script src="./tica-tac-toe.js"></script>
+</body>
+</html>

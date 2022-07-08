@@ -1,0 +1,58 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    border: thin;
+    border-color: black;
+    width: 40rem;
+    height: 30rem;
+    }
+    
+    .div0 {
+        grid-area: 1 / 1 / 2 / 2; 
+        border: solid;
+        border-color: black;
+    }
+    .div1 { 
+        grid-area: 1 / 2 / 2 / 3;
+        border: solid;
+        border-color: black; 
+    }
+    .div2 { 
+        grid-area: 1 / 3 / 2 / 4;
+        border: solid;
+        border-color: black;
+    }
+    .div3 { 
+        grid-area: 2 / 3 / 3 / 4;
+        border: solid;
+        border-color: black; 
+    }
+    .div4 { 
+        grid-area: 2 / 2 / 3 / 3;
+        border: solid;
+        border-color: black;
+    }
+    .div5 { 
+        grid-area: 2 / 1 / 3 / 2;
+        border: solid;
+        border-color: black; 
+    }
+    .div6 { 
+        grid-area: 3 / 1 / 4 / 2;
+        border: solid;
+        border-color: black;
+    }
+    .div7 {
+        grid-area: 3 / 2 / 4 / 3; 
+        border: solid;
+        border-color: black;
+    }
+    .div8 { 
+        grid-area: 3 / 3 / 4 / 4; 
+        border: solid;
+        border-color: black;
+    }
