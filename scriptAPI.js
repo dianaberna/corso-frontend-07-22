@@ -1,8 +1,14 @@
+/*
+Per comprendere e provare i seguenti esercizi vi consiglio di tenere commentati
+tutti gli altri così nella console non trovate tutti i risultati
+(ps. se sono tutti non commentati funziona tutto senza problemi)
+*/
+
 /* 
 classe -> è una struttura che serve in informatica per descrivere un modello reale o astratto
 oggetto -> instanza di una classe che possiede le sue proprietà e metodi 
 */
-/* 
+/* esempio classe Persona */
 class Persona {
     // proprietà
     name = '';
@@ -39,11 +45,13 @@ let persona2 = new Persona({
     surname: 'Rossi'
 })
 
-console.log(persona1.getFullName(), persona2.getFullName()) */
+console.log(persona1.getFullName(), persona2.getFullName())
 
+console.log("-----------------");
 
+/* esempio definizione Promise */
 
-/* function prova(i) {
+function provaPromise(i) {
     return new Promise((resolve, reject) => {
         if(i == 0){
             resolve('Hai ragione, i = 0')
@@ -53,7 +61,7 @@ console.log(persona1.getFullName(), persona2.getFullName()) */
     });
 }
 
-prova(0).then((response) => {
+provaPromise(0).then((response) => {
         //qui è stata risolta
         console.log(response)
     }).catch((error) => {
@@ -62,7 +70,9 @@ prova(0).then((response) => {
     }).finally(() => {
         //alla fine della promessa
         console.log('Ho finito')
-    }) */
+    })
+
+/* esempio pari e dispari con Promise */
 
 const evenOddFunc = () => {
     let randInt = Math.round((Math.random() * 10) + 1);
@@ -79,9 +89,9 @@ const evenOddFunc = () => {
 const testFuncAsync = async () => {
     try {
         let result = await evenOddFunc();
-        echo('Promise resolved! ' + result );
+        console.log('Promise resolved! ' + result );
     } catch(err) {
-        echo('Promise rejected! ' + err);
+        console.log('Promise rejected! ' + err);
     }
 };
 
@@ -90,21 +100,13 @@ for(let i = 0; i < 10; i++) {
     testFuncAsync();
 }
 
-
-/* 
-window.addEventListener('load', async function(){
-    console.log("ciao")
-    loadImg();
-    await prova(0)
-    console.log('ciao')
-}) */
-
+console.log("-----------------");
 
 /* esempio github */
-/* async function showAvatar(){
 
-    let user = {name: 'dianaberna'}
-    let githubResponse = await fetch(`https://api.github.com/users/${user.name}`);
+ async function showAvatar(){
+    let username = 'dianaberna'
+    let githubResponse = await fetch(`https://api.github.com/users/${username}`);
     let githubUser = await githubResponse.json()
 
     let img = document.createElement('img')
@@ -118,18 +120,26 @@ window.addEventListener('load', async function(){
 }
 
 showAvatar();
-console.log("ciao") */
+console.log("ciao") 
 
-/* 
+window.addEventListener('load', function(){
+    console.log("ciao1")
+    loadImg();
+    console.log('ciao2')
+}) 
+
+console.log("-----------------");
+
+/* esempio unsplash */
 function loadImg(){
     const grid = document.getElementsByClassName('grid')[0]
-
-    let input_value = 'cat'
-    const url = 'https://api.unsplash.com/search/photos/?query='+input_value+'&per_page=9&client_id=hZRa4OdzodVlybtiMsr_HYdkAK3jMQ26SKTKiUM44QE'
+    let input_value = 'cat and dog'
+    let iddiana = 'hZRa4OdzodVlybtiMsr_HYdkAK3jMQ26SKTKiUM44QE'
+    const url = 'https://api.unsplash.com/search/photos/?query='+input_value+'&per_page=10&client_id='+iddiana
     fetch(url)
     .then(response => {
         if(response.ok){
-            console.log(response);
+            /* console.log(response); */
             return response.json()
         }else 
             alert(response.status)
@@ -138,18 +148,11 @@ function loadImg(){
         const imageNodes = [];
         console.log(data)
         for(let i=0; i<data.results.length; i++){
+            /* console.log(data.results[i]) */
             imageNodes[i] = document.createElement('div');
             imageNodes[i].className = 'img';
             imageNodes[i].style.backgroundImage = `url(${data.results[i].urls.raw})`
-            imageNodes[i].addEventListener('dblclick',
-            function(){
-                window.open(data.results[i].links.download, '_blank')
-            })
             grid.appendChild(imageNodes[i])
         }
     })
 }
-
-function removeImages(){
-    grid.innerHTML = ''
-} */
