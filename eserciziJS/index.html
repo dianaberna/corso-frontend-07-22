@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Esercizio DOM</title>
-</head>
+  </head>
 
-<body>
-    
+  <body>
     <div id="container">
-        <h1 class="text"> 🧛 Cripta del vampiro 🧛 </h1>
-        <button onclick="clickTheButton()" class="button" id="lightText">
-            Accendi la luce
-        </button>
+      <h1 class="text">🧛 Cripta del vampiro 🧛</h1>
+      <button onclick="clickTheButton()" class="button" id="lightText">
+        Accendi la luce
+      </button>
     </div>
-    
-    <div id="containerForm" style="display: none;">
-    <form class="form" id="form">
-        <h1>
-            Form Vittima 
-        </h1>
-        <h3>
-            Necessario per ricordami di chi è il sangue che bevo :3
-        </h3>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome"><br>
 
-        <label for="cognome">Gruppo sanguigno:</label><br>
-        <input type="text" id="cognome" name="cognome">
+    <div id="containerForm" style="display: none">
+      <form class="form" id="form">
+        <h1>Form Vittima</h1>
+        <h3>Necessario per ricordami di chi è il sangue che bevo :3</h3>
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" /><br />
 
-        <button onclick="clickForm()" type="button">
-            clicca
-            </button>
-            <p id="paragraph">
-            </p>
-    </form>
-    <img src="https://i.pinimg.com/564x/38/d2/70/38d270c86900e79c161951eadc8b71e9.jpg" alt style="margin: 4rem 0 0 25rem">
+        <label for="cognome">Gruppo sanguigno:</label><br />
+        <input type="text" id="cognome" name="cognome" />
+
+        <button onclick="clickForm()" type="button">clicca</button>
+        <p id="paragraph"></p>
+      </form>
+      <img
+        src="https://i.pinimg.com/564x/38/d2/70/38d270c86900e79c161951eadc8b71e9.jpg"
+        alt
+        style="margin: 4rem 0 0 25rem"
+      />
     </div>
-    
-    <script src="script.js">
-    </script>
-    
+
+    <script src="script.js"></script>
+
     <div class="listContainer">
-        <h1>LISTA DELLA SPESA</h1>
-        <input type="text" name="listElement" id="listElement">
-        <button type="button" onclick="addList()">Aggiungi</button>
-        <ul id="list"></ul> 
+      <h1>LISTA DELLA SPESA</h1>
+      <input type="text" name="listElement" id="listElement" />
+      <button type="button" onclick="addList()">Aggiungi</button>
+      <ul id="list"></ul>
     </div>
-</body>
+  </body>
 </html>
