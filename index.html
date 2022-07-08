@@ -19,11 +19,17 @@
         }
 
         li {
-            height: 2rem;
+            height: fit-content;
         }
 
         #id {
             font-size: 20px;
+        }
+        .nonTerminato{
+            text-decoration: line-through;
+            pointer-events: none;
+            cursor: default;
+            color: black;
         }
     </style>
 </head>
@@ -33,10 +39,35 @@
     <h2>HTML/CSS</h2>
     <ul>
         <li><a href="./esercizi_css/landing_page/index.html">Landing page</a></li>
-        <li><a href="./esercizi_css/app/welcome.html">App Pet</a></li>
-        <li><a href="./esercizi_css/app_pizza/home.html">App Pizza</a></li>
-        <li><a href="./esercizi_css/app_delivery/home.html">App Delivery</a></li>
-        <li><a href="./esercizi_css/app_streaming/home.html">App Streaming</a></li>
+        <li>
+            <p>App Pet</p>
+            <ul>
+                <li><a href="./esercizi_css/app_pet/welcome.html">Welcome</a></li>
+                <li><a href="./esercizi_css/app_pet/home.html">Home</a></li>
+                <li><a href="./esercizi_css/app_pet/details.html" class="nonTerminato">Details</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>App Pizza</p>
+            <ul>
+                <li><a href="./esercizi_css/app_pizza/home.html">Home</a></li>
+                <li><a href="./esercizi_css/app_pizza/create1.html" class="nonTerminato">Create1</a></li>
+                <li><a href="./esercizi_css/app_pizza/create2.html" class="nonTerminato">Create2</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>App Delivery</p>
+            <ul>
+                <li><a href="./esercizi_css/app_delivery/welcome.html">Welcome</a></li>
+                <li><a href="./esercizi_css/app_delivery/home.html">Home</a></li>
+                <li><a href="./esercizi_css/app_delivery/details.html">Details</a></li>
+            </ul>
+        <li>
+            <p>App Streaming</p>
+            <ul>
+                <li><a href="./esercizi_css/app_streaming/home.html">Home</a></li>
+                <li><a href="./esercizi_css/app_streaming/details.html">Details</a></li>
+            </ul>
     </ul>
     <h2 id="javascript">Javascript</h2>
     <ul>
