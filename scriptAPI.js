@@ -1,9 +1,10 @@
 /* 
-classe -> è una struttura che serve in informatica per descrivere
-    un modello reale o astratto
+classe -> è una struttura che serve in informatica per descrivere un modello reale o astratto
 oggetto -> instanza di una classe che possiede le sue proprietà e metodi 
 */
+/* 
 class Persona {
+    // proprietà
     name = '';
     surname = '';
 
@@ -12,9 +13,9 @@ class Persona {
         // name e surname sono fuori da questa funzione ma ci accedere tramite this
         this.name = name;
         this.surname = surname;
-
     }
 
+    // metodi
     getName() {
         return this.name;
     }
@@ -28,12 +29,75 @@ class Persona {
     }
 }
 
-let diana = new Persona({
+let persona1 = new Persona({
     name: 'Diana',
     surname: 'Bernabei'
 })
 
-console.log(diana.getFullName())
+let persona2 = new Persona({
+    name: 'Mario',
+    surname: 'Rossi'
+})
+
+console.log(persona1.getFullName(), persona2.getFullName()) */
+
+
+
+/* function prova(i) {
+    return new Promise((resolve, reject) => {
+        if(i == 0){
+            resolve('Hai ragione, i = 0')
+        }else{
+            reject('Ci dispiace, i non è uguale a 0')
+        }
+    });
+}
+
+prova(0).then((response) => {
+        //qui è stata risolta
+        console.log(response)
+    }).catch((error) => {
+        //gestisci l'errore
+        console.log(error)
+    }).finally(() => {
+        //alla fine della promessa
+        console.log('Ho finito')
+    }) */
+
+const evenOddFunc = () => {
+    let randInt = Math.round((Math.random() * 10) + 1);
+    return new Promise( (resolve, reject) => {
+        if(randInt % 2 === 0) {
+            resolve('Resolved with: ' + randInt);
+        } else {
+            reject('Rejected with: ' + randInt);
+        }
+    });
+};
+
+
+const testFuncAsync = async () => {
+    try {
+        let result = await evenOddFunc();
+        echo('Promise resolved! ' + result );
+    } catch(err) {
+        echo('Promise rejected! ' + err);
+    }
+};
+
+
+for(let i = 0; i < 10; i++) {
+    testFuncAsync();
+}
+
+
+/* 
+window.addEventListener('load', async function(){
+    console.log("ciao")
+    loadImg();
+    await prova(0)
+    console.log('ciao')
+}) */
 
 
 /* esempio github */
@@ -55,42 +119,6 @@ console.log(diana.getFullName())
 
 showAvatar();
 console.log("ciao") */
-
-function prova(i) {
-    return new Promise((resolve, reject) => {
-        if(i == 0){
-            resolve('Hai ragione, i = 0')
-        }else{
-            reject('Ci dispiace, i non è uguale a 0')
-        }
-    });
-}
-
-/* async function prova(){
-    //niente promise
-} */
-
-/* prova(5)
-    .then((response) => {
-        //qui è stata risolta
-        console.log(response)
-    })
-    .catch((error) => {
-        //gestisci l'errore
-        console.log(error)
-    })
-    .finally(() => {
-        //alla fine della promessa
-        console.log('Ho finito')
-    }) */
-
-
-window.addEventListener('load', async function(){
-    /* console.log("ciao") */
-    /* loadImg(); */
-    await prova(0)
-    console.log('ciao')
-})
 
 /* 
 function loadImg(){
