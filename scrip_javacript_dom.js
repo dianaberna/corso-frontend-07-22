@@ -223,6 +223,7 @@
             console.log('errore');
         }else{
             console.log(elemento);
+            console.log
 
             let id = document.getElementsByTagName('li').length + 1;
             let addElement = document.createElement('li');
@@ -236,7 +237,6 @@
             bottoneElimina.innerHTML = 'Delete';
             bottoneElimina.type = 'button';
             bottoneElimina.name = 'Elimina';
-
             bottoneElimina.onclick = function(){
                 return elimina(id);
             }
