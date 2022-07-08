@@ -1,6 +1,7 @@
 
     const giocatori = ['p1', 'p2']
     let  simboli = ['x','o'];
+    let stato = ["-","-","-","-","-","-","-","-","-"];
 
 function assegnaTurno(){
     let padre = document.getElementById('padre');
@@ -30,31 +31,51 @@ function assegnaTurno(){
 
 
 function giocare(riga , colonna){
-    n = riga * 3 + colonna;
+    const n = riga * 3 + colonna;
     console.log(n);
     if(simboli == 'x'){
-
-        document.getElementsByClassName('div'+n)[0].innerHTML = 'X';
+        stato[n] = 'x';
+        document.getElementsByClassName('div'+n)[0].innerHTML = 'x';
         simboli = 'o'
+        verdetto(n)
+        console.log(stato)
+        console.log(n + "----")
         console.log(simboli)
     }else {
-        document.getElementsByClassName('div'+n)[0].innerHTML ='O';
+        stato[n] = 'o';
+        document.getElementsByClassName('div'+n)[0].innerHTML ='o';
         simboli = 'x'
+        verdetto(n)
+        console.log(stato)
+        console.log(n +"----")
         console.log(simboli)
     }
 }
 
 
-        // let riga = 0;
-        // let colonna = 0;
-        // let array = ['a','b','c','d','e','f','g','h','i']; 
-        // /*
-        //  * a b c
-        //  * d e f
-        //  * g h i
-        //  */
-        // riga = 2;
-        // colonna = 1;
-        // console.log(array[riga*3+colonna])
+
+
+
+
+
+    function verdetto(attuale){
+        for(let i = 0 ; i < 9 ; i++){
+            if(attuale !== i ){
+
+            }
+        }
+    }
+
+        let riga = 0;
+        let colonna = 0;
+        let array = ['a','b','c','d','e','f','g','h','i']; 
+        /*
+         * a b c
+         * d e f
+         * g h i
+         */
+        riga = 1;
+        colonna = 2;
+        console.log(array[riga*3+colonna])
 
 
